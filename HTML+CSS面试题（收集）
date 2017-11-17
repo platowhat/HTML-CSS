@@ -1,0 +1,40 @@
+1、目前主流的浏览器以及其内核名有哪些？
+	[点这里查看](http://blog.csdn.net/inthuixiang/article/details/78565395)
+  
+2、内元素和块级元素的区别？
+	行内元素：不会独立出现在一行，单独使用的时候后面不会有换行符的元素。eg：span,   strong,   img, a 等。这些元素，默认的高宽，总是其内容的高宽。并且，margin和padding值，只有左右有效。
+	块级元素：独立在一行的元素，他们后面会自动带有换行符。eg：div  , p  ,form , ul , li , ol , dl 等。它们的出现，往往独自占领一行。在没有设置宽度的情况下，默认宽度总是其父元素的宽度。
+	行内元素转换成块元素，只要设置其display属性为block即可，display:block; 。块元素转换成行内元素，只要将其display属性设置为inline即可，display:inline;。
+
+3、Doctype作用？
+	`<!DOCTYPE>`告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
+
+4、引入样式时，link和@import的区别？
+	链接样式时，link只能在HTML页面中引入外部样式
+	导入样式表时，@import 既可以在HTML页面中导入外部样式，也可以在CSS样式文件中导入外部CSS样式。
+
+5、html5有哪些新特性？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
+
+(1)绘画 canvas;
+(2)用于媒介回放的 video 和 audio 元素;
+(3)本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;
+(4)sessionStorage 的数据在浏览器关闭后自动删除;
+(5)语意化更好的内容元素，比如 article、footer、header、nav、section;
+(6)表单控件，calendar、date、time、email、url、search;
+(7)新的技术webworker, websocket, Geolocation;
+
+IE8/IE7/IE6支持通过document.createElement方法产生的标签，可以利用这一特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式。当然也可以直接使用成熟的框架、比如html5shim;
+
+6、关于定位
+	一共有5个值，分别是：absolute fixed relative static inherit。
+	
+absolute　  生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+fixed 　　   生成绝对定位的元素，相对于浏览器窗口进行定位。
+relative　　生成相对定位的元素，相对于其正常位置进行定位。
+static　　   默认值。没有定位，元素出现在正常的流中
+inherit　　 规定应该从父元素继承 position 属性的值
+
+注：relative是相对其自身的位置变动的。absolute是会向上找其父元素，直到找到不是static定位的元素进行定位。一般在使用absolute的时候，都会给其父元素设置position:relative属性，使其基于父元素定位。
+
+7、
