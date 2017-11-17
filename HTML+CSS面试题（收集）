@@ -1,5 +1,5 @@
 1、目前主流的浏览器以及其内核名有哪些？
-	[点这里查看](http://blog.csdn.net/inthuixiang/article/details/78565395)
+	![http](http://blog.csdn.net/inthuixiang/article/details/78565395)
   
 2、内元素和块级元素的区别？
 	行内元素：不会独立出现在一行，单独使用的时候后面不会有换行符的元素。eg：span,   strong,   img, a 等。这些元素，默认的高宽，总是其内容的高宽。并且，margin和padding值，只有左右有效。
