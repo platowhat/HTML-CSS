@@ -2,7 +2,6 @@
 	text-align: center;
 	background-color: #d4d4f5;
 	overflow: hidden; 
-	width: 100%;
 }
 
 .box-wrap>div {
@@ -13,5 +12,4 @@
 	float: left;
 	background-color: orange;
 	color: red;
-	content: none;
 }
