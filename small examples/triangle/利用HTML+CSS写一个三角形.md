@@ -25,7 +25,7 @@ html代码只需创建两个名为triangle、triangle-left的div盒子即可，
 }
 ```
 
-图：![image](https://github.com/kivet-h/HTML-CSS/raw/master/images/triangle01.jpg)
+图：![image](https://github.com/kivet-h/HTML-CSS/raw/master/images/triangle/triangle01.jpg)
 
 
 实现出现三角形的效果，可以将div盒子宽高都设为0px，上面图就会变成四个三角形组成的一个正方形，再通过设置边框宽度以及颜色等，就能实现一个三角形
@@ -41,4 +41,4 @@ html代码只需创建两个名为triangle、triangle-left的div盒子即可，
 }
 ```
 
-三角形效果图：![image](https://github.com/kivet-h/HTML-CSS/raw/master/images/triangle02.png)
+三角形效果图：![image](https://github.com/kivet-h/HTML-CSS/raw/master/images/triangle/triangle02.png)
