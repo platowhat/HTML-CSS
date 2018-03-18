@@ -1,0 +1,57 @@
+body {
+	background-color: #68cdd5; 
+}
+
+.back>img {
+	width: 10%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.middle-logo>img {
+	width: 30%;
+}
+
+.middle-logo {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.middle-text {
+	margin: 15% 15%;
+}
+
+.down {
+	margin-top: 15%;
+	overflow: hidden;	
+}
+
+.down-left {
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.down-left>img {
+	width: 30%;
+}
+
+.down-right {
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 10%;
+	
+}
+
+.down-right>img {
+	width: 30%;
+}
+
+p {	
+	font-size: 45px;
+	font-family: "宋体","仿宋",sans-serif;
+	color: #ffffff;
+	line-height: 200%;
+}
