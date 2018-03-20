@@ -2,39 +2,52 @@ body {
 	background-color: #eff0f4;
 }
 
-/*************************top*************************/
+/*************************header*************************/
 header {
 	background-color: #5fc0cd;
+	position: fixed;	
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	width: 100%;
-	position: fixed;
+	height: 100px;	
+	z-index: 1;
+	
 }
 
 .close {
-	float: left;
-	text-align: center;
+	text-decoration: none;/*去掉超链接下划线*/
 	color: #ffffff;
-	font-size: 30px;
-	width: 20%;
+	float: left;
+	height: 100px;
+	line-height: 100px;
+	margin-left: 3%;
+	font-size: 25px;
 }
 .login {
-	float: left;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	right: 0px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 30px;
-	width: 60%;
 }
 .enrol {
-	float: left;
-	text-align: center;
+	text-decoration: none;/*去掉超链接下划线*/
 	color: #ffffff;
-	font-size: 30px;
-	width: 20%;
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin-right: 3%;
+	font-size: 25px;
 }
 
 /*************************main*************************/
 form {
 	position: relative;
 	top: 130px;
+	
 }
 
 .main-up {
