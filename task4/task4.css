@@ -2,20 +2,11 @@ body {
 	background-color: #eff0f4;
 }
 
-.status {
-	background-color: #5fc0cd;
-	margin: 0px;
-	padding: 0px;
-}
-.status>img {
-	width: 100%;
-	height: 100%;
-}
-
 /*************************top*************************/
-.top {
+header {
 	background-color: #5fc0cd;
-	overflow: hidden;
+	width: 100%;
+	position: fixed;
 }
 
 .close {
@@ -24,8 +15,6 @@ body {
 	color: #ffffff;
 	font-size: 30px;
 	width: 20%;
-	height:100px;
-	line-height: 100px;
 }
 .login {
 	float: left;
@@ -33,8 +22,6 @@ body {
 	color: #ffffff;
 	font-size: 30px;
 	width: 60%;
-	height:100px;
-	line-height: 100px;
 }
 .enrol {
 	float: left;
@@ -42,19 +29,15 @@ body {
 	color: #ffffff;
 	font-size: 30px;
 	width: 20%;
-	height:100px;
-	line-height: 100px;
 }
 
 /*************************main*************************/
-.main {
-	margin-top: 30px;
-	overflow: hidden;
-	
+form {
+	position: relative;
+	top: 130px;
 }
 
 .main-up {
-	clear: both;
 	overflow: hidden;
 	background-color: #ffffff;
 }
@@ -66,22 +49,21 @@ body {
 	
 }
 
-.main-up-line {
-	float: left;
-	width: 5%;
-}
-
 .main-up-username {
 	float: left;
-	width: 80%;
-	padding-left: 3%;
+	width: 83%;
+	line-height: 100px;
 }
 
 .username {
 	width: 100%;
-	height: 100px;
+	height: 60px;
 	font-size: 30px;
-	border: 0px;
+	border-left: 1px solid gray;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	padding-left: 5%;
 	outline:none;/*点击文本框不出现边框*/
 }
 
@@ -100,22 +82,22 @@ body {
 	
 }
 
-.main-down-line {
-	float: left;
-	width: 5%;
-}
-
 .main-down-password {
 	float: left;
-	width: 80%;
-	padding-left: 3%;
+	width: 83%;
+	line-height: 100px;
 }
 
 .password {
 	width: 100%;
-	height: 100px;
+	height: 60px;
 	font-size: 30px;
-	border: 0px;
+	font-size: 30px;
+	border-left: 1px solid gray;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	padding-left: 5%;
 	outline:none;
 }
 
@@ -130,7 +112,7 @@ body {
 }
 
 .go {
-	background: #5fc0cd;
+	background: #5fc0cd;/*设置登录按钮颜色为蓝色*/
 	width: 100%;
 	height: 100%;
 	font-size: 40px;
@@ -141,8 +123,11 @@ body {
 
 .footer-forget {
 	font-size: 30px;
-	color: #5fc0cd;
 	float: right;
-	margin-top: 10px;
-	margin-right: 10px;
+	margin: 30px;
+	color: #5fc0cd;
+}
+
+.aa {
+	height: 100000px;
 }

@@ -7,52 +7,43 @@
 </head>
 <body>
 	<div class="box">
-		<div class="status">
-			<img src="../images/task4/status.png">
-		</div>
-
-		<div class="top">
-			<div class="close">关闭</div>
-			<div class="login">登录</div>
-			<div class="enrol">注册</div>
-		</div>
-
-		<div class="main">
-			<div class="main-up">
-				<div class="main-up-iPhone">
-					<img src="../images/task4/iPhone.png">
+		<header>
+			<p class="close">关闭</p>
+			<p class="login">登录</p>
+			<p class="enrol">注册</p>
+		</header>			
+		
+		<form action="#">
+			<div class="main">
+				<div class="main-up">
+					<div class="main-up-iPhone">
+						<img src="../images/task4/iPhone.png">
+					</div>
+					<div class="main-up-username">
+						<input type="text" class="username" name="usename" maxlength="11" placeholder="请输入手机号">
+					</div>
 				</div>
-				<div class="main-up-line">
-					<img src="../images/task4/line.png">
-				</div>
-				<div class="main-up-username">
-					<input type="text" class="username" name="usename" maxlength="11" placeholder="请输入手机号">
+
+				<div class="main-down">
+					<div class="main-down-locked">
+						<img src="../images/task4/locked.png">
+					</div>
+					<div class="main-down-password">
+						<input type="password" class="password" name="password" placeholder="请输入密码">
+					</div>
 				</div>
 			</div>
 
-			<div class="main-down">
-				<div class="main-down-locked">
-					<img src="../images/task4/locked.png">
+			<div class="footer">
+				<div class="footer-login">
+					<button type="submit" class="go" name="go" value="go">登&nbsp;&nbsp;录</button>
 				</div>
-				<div class="main-down-line">
-					<img src="../images/task4/line.png">
-				</div>
-				<div class="main-down-password">
-					<input type="password" class="password" name="password" placeholder="请输入密码">
+				<div>
+					<a href="#" class="footer-forget">忘记密码</a>
 				</div>
 			</div>
-		</div>
-
-		<div class="footer">
-			<div class="footer-login">
-				<button type="submit" class="go" name="go" value="go">登&nbsp;&nbsp;录</button>
-			</div>
-			<div class="footer-forget">
-				<u>忘记密码</u>
-			</div>
-		</div>
-
+		</form>
 	</div>
-	
+	<div class="aa"></div>
 </body>
 </html>
