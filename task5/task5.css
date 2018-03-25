@@ -10,17 +10,16 @@ header {
 	height: 10rem;
 	background-color: #5fc0cd;
 	z-index: 9999;
-
 }
 
-.back {
-	background-color: #5fc0cd;
-	font-size: 5rem;
-	height: 10rem;
-	border:none;
-	color: #ffffff;
-	margin: 0 auto;
-	padding-left: 3rem; 
+header a {
+	background: url(../images/task5/back.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-top: 2rem;
+	width: 5rem;
+	height: 5rem;
 }
 
 .homepage {
