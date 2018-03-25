@@ -39,6 +39,7 @@ main {
 	position: absolute;
 	left: 0px;
 	right: 0px;
+	margin-bottom: 140px;
 }
 
 .main_banner {
@@ -164,9 +165,4 @@ footer {
 	background: #5fc0cd;
 	border: 5px solid #5fc0cd;
 	border-radius: 20px;
-}
-
-
-.aa {
-	height: 500rem;
 }
