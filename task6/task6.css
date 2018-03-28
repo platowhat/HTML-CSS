@@ -3,15 +3,12 @@ html {
 	font-family: "宋体", sans-serif;
 }
 
-body {
-	margin: 0px;
-}
-
 /* * 是通配符，此处表示所有的元素的对齐方式以及和父类之间的间距都为0*/
 * {
 	margin: 0px;
 	padding: 0px;
 }
+
 /**************************************header*****************************************/
 header {
 	position: fixed;
