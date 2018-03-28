@@ -99,11 +99,11 @@ nav {
 	width: 0px;
 	height: 0px;
 	position: relative;
-	top: 1.25rem;
+	top: 1rem;
 	margin-left: 0.5rem;
-	border-top: 1rem solid #999;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
+	border-top: 0.6rem solid #999;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
     
 }
 
@@ -201,11 +201,6 @@ div ul {
 .gray_text {
 	color: #999999;
 }
-
-/*.gpsb_img {
-
-	background: url(../images/task6/gpsb.png) no-repeat;
-}*/
 
 
 /**************************************footer*****************************************/
