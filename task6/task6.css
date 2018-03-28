@@ -5,11 +5,10 @@ html {
 body {
 	margin: 0px;
 }
-/** {
+* {
 	margin: 0px;
 	padding: 0px;
-}*/
-
+}
 /**************************************header*****************************************/
 header {
 	position: fixed;
@@ -174,10 +173,8 @@ div ul {
 .time {
 	font-size: 1.6rem;
 	width: 58%;
-	height: 100%;
 	display:inline-block;
 	line-height: 100%;
-	padding-top: 3%;
 	overflow: hidden; /*自动隐藏文字*/
 	text-overflow: ellipsis;/*文字隐藏后添加省略号*//*display:flex;的时候不行，当display:block;的时候就行，说明这行代码需要在一个块状元素里面，并且还要设置宽度，溢出才会有效果*/
 	white-space: nowrap;/*强制不换行*/
