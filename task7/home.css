@@ -28,20 +28,20 @@ header {
 	margin-right: 1rem;
 }
 .menu {	
-	background: url(../images/task7/menu.png) no-repeat 50% 50%/2rem 2rem;
+	background: url(../images/task7/home/menu.png) no-repeat 50% 50%/2rem 2rem;
 	float: left;	 	
 }
 .site {	
-	background: url(../images/task7/site.png) no-repeat 50% 50%/2rem 2rem;	 	
+	background: url(../images/task7/home/site.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
 .volume {	
-	background: url(../images/task7/volume.png) no-repeat 50% 50%/2rem 2rem;	 	
+	background: url(../images/task7/home/volume.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
 .help {	
-	background: url(../images/task7/help.png) no-repeat 50% 50%/2rem 2rem;	 	
+	background: url(../images/task7/home/help.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
 .rule {	
-	background: url(../images/task7/rule.png) no-repeat 50% 50%/2rem 2rem;	
+	background: url(../images/task7/home/rule.png) no-repeat 50% 50%/2rem 2rem;	
 }
 
 /*********************************main*****************************************/
@@ -68,7 +68,7 @@ main {
 	width: 10%;
 	height: 100%;
 	display: inline-block;	
-	background: url(../images/task7/toright1.png) no-repeat 0 50%/1.5rem 2rem;
+	background: url(../images/task7/home/toright1.png) no-repeat 0 50%/1.5rem 2rem;
 }
 
 .main_bottom {

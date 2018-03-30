@@ -1,0 +1,141 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*********************************header*****************************************/
+header {
+	position: fixed;
+	background-color: #34bede;
+	width: 100%;
+	height: 4rem;
+	z-index: 9999;
+	top: 0;
+}
+
+.tohome {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	display: inline-block;
+	background: url(../images/task7/result/tohome.png) no-repeat 50% 50%/2rem 2rem;
+	float: left;
+}
+
+.gameover {
+	width: 80%;
+	height: 2rem;
+	margin-top: 1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 100%;
+	margin-left: 10%;
+	float: left;
+}
+
+
+.rule {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	display: inline-block;
+	background: url(../images/task7/result/rule.png) no-repeat 50% 50%/2rem 2rem;
+	float: right;
+}
+/*********************************main*****************************************/
+main {
+	width: 100%;
+	margin: 4rem 0 6rem 0;
+	background-color: #29bde0;
+}
+
+.main_win {
+	width: 100%;
+	height: 11rem;
+	background: url(../images/task7/result/win.png) no-repeat 50% 50%/14rem 8rem;
+}
+
+.main_good {
+	width: 80%;
+	margin: 0 10%;
+	color: #ffc865;
+	font-size: 1.8rem;
+}
+
+.main_info {
+	width: 80%;
+	margin: 5% 10% 0 10%;
+	width: 100%;
+	color: #fff;
+	font-size: 1.7rem;
+}
+
+
+.main_info pre p {
+	display: inline-block;
+	margin: .5rem 0;
+}
+
+
+
+.gameing {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #fff; 
+}
+
+.gameing p {
+	overflow: hidden;
+}
+
+.time {
+	float: right;
+	margin: .5rem 10% .5rem 0;
+	color: #e9eaea;
+}
+
+.day {
+	float: left;
+	font-size: 1.6rem;
+	margin: .5rem 0 .5rem 10%;
+}
+
+.date {
+	color: #c0c0c2;
+	margin: 0 0 .5rem 10%;
+}
+/*********************************footer*****************************************/
+footer {
+	background-color: rgba(41, 189, 224, 0.5);
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+
+.again {
+	width: 40%;
+	height: 3rem;
+	margin: 4% 4% 4% 6%;
+	float: left;
+	font-size: 1.5rem;
+	color: #ffffff;
+	background: #f66f6f;
+	border: 2px solid #f66f6f;
+	border-radius: 5px;
+}
+
+.up_share {
+	width: 40%;
+	height: 3rem;
+	margin:  4% 6% 4% 4%;
+	float: left;
+	font-size: 1.5rem;
+	color: #ffffff;
+	background: #fbb435;
+	border: 2px solid #fbb435;
+	border-radius: 5px;
+}
