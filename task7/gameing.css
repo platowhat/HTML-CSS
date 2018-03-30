@@ -1,0 +1,58 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/*********************************header*****************************************/
+header {
+	position: fixed;
+	background-color: #34bede;
+	width: 100%;
+	height: 4rem;
+	z-index: 9999;
+	top: 0;
+}
+
+.toresult {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	display: inline-block;
+	background: url(../images/task7/gameing/toresult.png) no-repeat 50% 50%/2rem 2rem;
+	float: left;
+}
+
+.vote {
+	width: 80%;
+	height: 2rem;
+	margin-top: 1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 100%;
+	margin-left: 10%;
+	float: left;
+}
+
+
+.cancel {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	display: inline-block;
+	background: url(../images/task7/gameing/cancel.png) no-repeat 50% 50%/2rem 2rem;
+	float: right;
+}
+
+
+/*********************************main*****************************************/
+main {
+	width: 100%;
+	position: relative;
+	top: 4rem;
+}
+.audio {
+	width: 100%;
+}
