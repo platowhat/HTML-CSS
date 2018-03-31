@@ -92,7 +92,8 @@ main {
 	position: relative;
 	top: 10rem;
 	background-color: #34bede;
-	height: 1000px;/********/
+	overflow: hidden;
+	padding-bottom: 6rem;
 }
 .main_vote {
 	width: 96%;
@@ -103,7 +104,6 @@ main {
 	width: 33.3%;
 	height: 10rem;
 	float: left;
-	overflow: hidden;
 }
 .game_name {
 	width: 70%;
@@ -131,25 +131,15 @@ main {
 	color: #fff;
 }
 
-/*.game_select {
-	background-color: #34bede;
-	visibility: hidden;
-}*/
-
-.game_select{
+.game_select {
 	width: 72%;
 	height: 25%;
 	margin: 5% 15% 0 15%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	visibility: hidden;
+	display: none;
 }
-
-/*.game_select:visited {
-	visibility: visible;
-}*/
-
 
 .kill {
 	width: 20%;
@@ -184,19 +174,22 @@ main {
 
 }
 
-/* 小图标实现,雪碧图的自适应*/
-/*.gamer-select {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: -0.79rem;
-    left: -0.05rem;
-    width: 21.25vw;
-    height: .74rem;
-    visibility: hidden;
+/*********************************footer*****************************************/
+footer {
+	position: fixed;
+	z-index: 100;
+	bottom: 0px;
+	width: 100%;
+	height: 6rem;
+	background-color: #34bede;
 }
-.gamer-select i {
-    flex-basis: 22.5%;
-    padding-bottom: 22.5%;
-}*/
+
+footer button {
+	width: 60%;
+	height: 4rem;
+	margin: 1rem 20%;
+	background: #fbb435;
+	color: #fff;
+	font-size: 2rem;
+	border: none;
+}
