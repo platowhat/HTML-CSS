@@ -11,15 +11,15 @@ header {
 	position: fixed;
 	background-color: #34bede;
 	width: 100%;
-	height: 4rem;
-	z-index: 9999;
+	height: 10rem;
+	z-index: 100;
 	top: 0;
 }
 
 .toresult {
 	position: absolute;
 	width: 10%;
-	height: 100%;
+	height: 4rem;
 	display: inline-block;
 	background: url(../images/task7/gameing/toresult.png) no-repeat 50% 50%/2rem 2rem;
 	float: left;
@@ -40,19 +40,164 @@ header {
 .cancel {
 	position: absolute;
 	width: 10%;
-	height: 100%;
+	height: 4rem;
 	display: inline-block;
 	background: url(../images/task7/gameing/cancel.png) no-repeat 50% 50%/2rem 2rem;
 	float: right;
 }
 
+.audio {
+	width: 100%;
+	height: 3rem;
+	position: absolute;
+	top: 4rem;
+	line-height: 3rem;
+	font-size: 1.5rem;	
+	background-color: #bae9f4;
+}
+.audio span {
+	width: 50%;
+	padding-left: 2rem;
+}
+.switch {
+	width: 2rem;
+	height: 2rem;
+	float: right;
+	margin: .5rem .5rem .5rem 0px;
+	background: url(../images/task7/gameing/switch.png) no-repeat 50% 50%/2rem 2rem;
+}
+
+.triangle_down {
+	position: absolute;
+	top: 7rem;
+	left: 1rem;
+    width: 0px;
+    height: 0px;
+    border-top: 1rem solid #bae9f4;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+}
+
+.start {
+	position: absolute;
+	bottom: .5rem;
+	left: 1.5rem;
+	color: #fff;
+	width: 100%;
+}
 
 /*********************************main*****************************************/
 main {
 	width: 100%;
 	position: relative;
-	top: 4rem;
+	top: 10rem;
+	background-color: #34bede;
+	height: 1000px;/********/
 }
-.audio {
-	width: 100%;
+.main_vote {
+	width: 96%;
+	margin: 0 2%;
 }
+
+.gamer {
+	width: 33.3%;
+	height: 10rem;
+	float: left;
+	overflow: hidden;
+}
+.game_name {
+	width: 70%;
+	height: 38%;
+	line-height: 4rem;
+	text-align: center;
+	margin: 10% 15% 0 15%;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-color: #f3c881;
+	display: inline-block;
+}
+.game_id {
+	width: 70%;
+	height: 20%;
+	line-height: 2rem;
+	text-align: center;
+	margin: 0 15% 0 15%;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-color: #82af9b;
+	display: inline-block;
+	color: #fff;
+}
+
+/*.game_select {
+	background-color: #34bede;
+	visibility: hidden;
+}*/
+
+.game_select{
+	width: 72%;
+	height: 25%;
+	margin: 5% 15% 0 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+/*.game_select:visited {
+	visibility: visible;
+}*/
+
+
+.kill {
+	width: 20%;
+	height: 65%;
+	display: inline-block;
+    background: url(../images/task7/gameing/kill.png) no-repeat 0 0/100% 100%;
+    border: none;
+	visibility: hidden;
+}
+.find {
+	width: 20%;
+	height: 65%;
+	display: inline-block;
+    background: url(../images/task7/gameing/find.png) no-repeat 0 33.3%/100% 100%;
+    border: none;
+	visibility: hidden;
+}
+.load {
+	width: 20%;
+	height: 65%;
+	display: inline-block;
+    background: url(../images/task7/gameing/load.png) no-repeat 0 66.6%/100% 100%;
+    border: none;
+	visibility: hidden;
+}
+.save {
+	width: 20%;
+	height: 65%;
+	display: inline-block;
+    background: url(../images/task7/gameing/save.png) no-repeat 0 100%/100% 100%;
+    border: none;
+    visibility: hidden;
+
+}
+
+/* 小图标实现,雪碧图的自适应*/
+/*.gamer-select {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -0.79rem;
+    left: -0.05rem;
+    width: 21.25vw;
+    height: .74rem;
+    visibility: hidden;
+}
+.gamer-select i {
+    flex-basis: 22.5%;
+    padding-bottom: 22.5%;
+}*/
