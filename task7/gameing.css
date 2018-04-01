@@ -105,7 +105,7 @@ main {
 	height: 10rem;
 	float: left;
 }
-.gamer:hover div {
+.gamer:hover .game_select {
 	visibility: visible;
 }
 .game_name {
