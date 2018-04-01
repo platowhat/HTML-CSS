@@ -105,6 +105,9 @@ main {
 	height: 10rem;
 	float: left;
 }
+.gamer:hover div {
+	visibility: visible;
+}
 .game_name {
 	width: 70%;
 	height: 38%;
@@ -138,12 +141,12 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	display: none;
+	visibility: hidden;
 }
 
 .kill {
 	width: 20%;
-	height: 65%;
+	height: 60%;
 	display: inline-block;
     background: url(../images/task7/gameing/kill.png) no-repeat 0 0/100% 100%;
     border: none;
@@ -151,23 +154,21 @@ main {
 }
 .find {
 	width: 20%;
-	height: 65%;
+	height: 60%;
 	display: inline-block;
     background: url(../images/task7/gameing/find.png) no-repeat 0 33.3%/100% 100%;
     border: none;
-	/*margin: 0 4% 0 6%;*/
 }
 .load {
 	width: 20%;
-	height: 65%;
+	height: 60%;
 	display: inline-block;
     background: url(../images/task7/gameing/load.png) no-repeat 0 66.6%/100% 100%;
     border: none;
-	/*margin: 0 6% 0 4%;*/
 }
 .save {
 	width: 20%;
-	height: 65%;
+	height: 60%;
 	display: inline-block;
     background: url(../images/task7/gameing/save.png) no-repeat 0 100%/100% 100%;
     border: none;
