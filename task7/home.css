@@ -127,9 +127,7 @@ main {
 }
 
 /*********************************main*****************************************/
-footer {
-	position: fixed;
-	bottom: 0px;
+.footer {
 	width: 90%;
 	margin: 0 5%;
 	height: 2rem;
