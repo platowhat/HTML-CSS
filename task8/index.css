@@ -1,0 +1,158 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************header********************************/
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.header_top {
+	height: 6vw;
+}
+
+.header_top span {
+	height: 6vw;
+	line-height: 6vw;
+	display: inline-block;
+	margin: 0 0 0 5%;
+	color: #29b078;
+	font-size: 1rem;
+}
+.all_contact {
+	float: right;
+	height: 100%;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.contact {
+	float: right;
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+}
+
+.weixin {
+	background: url(../images/task8/weixin.png) no-repeat 50% 50%/4vw 4vw;
+}
+
+.QQ {
+	background: url(../images/task8/QQ.png) no-repeat 50% 50%/4vw 4vw;
+}
+
+.weibo {
+	background: url(../images/task8/weibo.png) no-repeat 50% 50%/4vw 4vw;
+}
+/*******************/
+.header_down {
+	width: 100%;
+	height: 10vw;
+	background-color: #29b078;
+}
+.jinengshu {
+	position: relative;
+	top: 1vw;
+	left: 5%;
+	width: 16vw;
+	height: 8vw;
+	display: inline-block;
+	background: url(../images/task8/jinengshu.png) no-repeat 50% 50%/16vw 8vw;
+
+}
+
+.menu {
+	height: 10vw;
+	width: 40%;
+	display:flex;
+	flex-direction:row;
+	float: right;
+	margin-right: 10%;
+
+	/*white-space:nowrap;*/ 
+}
+.menu a {
+	display: inline-block;
+	height: 10vw;	
+	line-height: 10vw;
+	text-align: center;
+	border: none;
+	flex: 1;
+	color: #fff;
+	text-decoration: none;
+	/*width: 25%;*/
+}
+
+.menu a:hover {
+	border-bottom: 4px solid #fff;
+	box-sizing: border-box;
+}
+
+/********************************main********************************/
+main {
+	position: absolute;
+	top: 16vw;
+}
+
+.item img{
+	width:100%;
+}
+#carousel-example-generic{
+	width:100%;
+	margin:0 auto;
+}
+
+.toleft {
+	position: absolute;
+	top: 30%;
+	left: 70%;
+	width: 20%;
+	height: 30%;
+	display: inline-block;
+	background: url(../images/task8/toleft.png) no-repeat 50% 50%/6vw 7vw;
+}
+.toright {
+	position: absolute;
+	top: 30%;
+	right: 70%;
+	width: 20%;
+	height: 30%;
+	display: inline-block;
+	background: url(../images/task8/toright.png) no-repeat 50% 50%/6vw 7vw;
+}
+
+.carousel-caption {
+	/*position: absolute;
+	top: 10%;*/
+	width: 70%;
+	overflow: hidden;
+}
+.text1 {
+	width: 70%;
+	float: right;
+	font-size: 2.5vw;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0;
+}
+
+.text2 {
+	width: 80%;
+	float: left;
+	margin-left: 10%; 
+	font-size: 3vw;
+	font-weight: bold;
+	display: inline-block;
+}
+.text2 span {
+	font-size: 5vw;
+	font-weight: bold;
+}
