@@ -1,5 +1,6 @@
 html {
 	font-size: 62.5%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 * {
@@ -9,8 +10,6 @@ html {
 
 /********************************header********************************/
 header {
-	position: fixed;
-	top: 0px;
 	width: 100%;
 	background-color: #fff;
 }
@@ -100,6 +99,8 @@ header {
 main {
 	position: absolute;
 	top: 16vw;
+	background-size: #fafafa;
+	width: 100%;
 }
 
 .item img{
@@ -130,29 +131,70 @@ main {
 }
 
 .carousel-caption {
-	/*position: absolute;
-	top: 10%;*/
 	width: 70%;
 	overflow: hidden;
 }
 .text1 {
 	width: 70%;
 	float: right;
-	font-size: 2.5vw;
+	font-size: 2vw;
 	font-weight: bold;
 	display: inline-block;
 	margin: 0;
+	white-space: nowrap;
 }
 
 .text2 {
 	width: 80%;
 	float: left;
-	margin-left: 10%; 
-	font-size: 3vw;
+	margin-left: 5%; 
+	font-size: 2.5vw;
 	font-weight: bold;
 	display: inline-block;
+	white-space: nowrap;
 }
 .text2 span {
-	font-size: 5vw;
+	font-size: 4.5vw;
 	font-weight: bold;
+}
+
+
+/***************main_mid***************/
+.main_mid {
+	width: 80%;
+	margin: 10% 10%;
+}
+
+.row div {
+	text-align: center;
+} 
+
+.col-md-3 img{
+	width: 6vw;
+	height: 6.5vw;
+}
+.usernum {
+	background: url(../images/task8/usernum.png) no-repeat 0 50%/30% 100%;
+	color: #29b078;
+	display: inline-block;
+	line-height: 100%;
+}
+
+.line_left {
+	border-left: 1px dashed #999;
+	box-sizing: border-box;
+	/*padding: 40px 0;*/
+}
+
+.col-md-3 h4 {
+	font-size: 2rem;
+}
+
+.col-md-3 p {
+	font-size: 1rem;
+	color: #999;
+}
+
+.col-md-3 p {
+	margin: 1rem 0;
 }
