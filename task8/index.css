@@ -198,3 +198,55 @@ main {
 .col-md-3 p {
 	margin: 1rem 0;
 }
+
+
+.how_to_learn {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 3vw;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.circle-p {
+	width: 90%;
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
+    color: #29b078;
+    text-align: center;
+}
+
+.detail-2 {
+	width: 80%;
+    color: #a1a1a1;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.icon-arrow {
+	width: 10%;
+	height: 4rem;
+}
+
+.icon-arrow img {
+	width: 100%;
+	height: 100%;
+}
+
+.blank {
+	width: 10%;
+}
