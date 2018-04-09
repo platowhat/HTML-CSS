@@ -8,9 +8,6 @@ html {
 	padding: 0px;
 }
 
-body {
-	background-color: #fafafa;
-}
 /********************************header********************************/
 header {
 	width: 100%;
@@ -18,16 +15,16 @@ header {
 }
 
 .header_top {
-	height: 6vw;
+	height: 40px;
 }
 
 .header_top span {
-	height: 6vw;
-	line-height: 6vw;
+	height: 40px;
+	line-height: 40px;
 	display: inline-block;
 	margin: 0 0 0 5%;
 	color: #29b078;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 .all_contact {
 	float: right;
@@ -44,66 +41,64 @@ header {
 }
 
 .weixin {
-	background: url(../images/task8/index/weixin.png) no-repeat 50% 50%/4vw 4vw;
+	background: url(../images/task8/weixin.png) no-repeat 50% 50%/35px 35px;
 }
 
 .QQ {
-	background: url(../images/task8/index/QQ.png) no-repeat 50% 50%/4vw 4vw;
+	background: url(../images/task8/QQ.png) no-repeat 50% 50%/35px 35px;
 }
 
 .weibo {
-	background: url(../images/task8/index/weibo.png) no-repeat 50% 50%/4vw 4vw;
+	background: url(../images/task8/weibo.png) no-repeat 50% 50%/35px 35px;
 }
 /*******************/
 .header_down {
 	width: 100%;
-	height: 10vw;
+	height: 80px;
 	background-color: #29b078;
 }
 .jinengshu {
 	position: relative;
-	top: 1vw;
+	top: 10px;
 	left: 5%;
-	width: 16vw;
-	height: 8vw;
+	width: 120px;
+	height: 60px;
 	display: inline-block;
-	background: url(../images/task8/index/jinengshu.png) no-repeat 50% 50%/16vw 8vw;
+	background: url(../images/task8/jinengshu.png) no-repeat 50% 50%/120px 60px;
 
 }
 
 .menu {
-	height: 10vw;
-	width: 40%;
+	height: 80px;
+	width: 30%;
 	display:flex;
 	flex-direction:row;
 	float: right;
 	margin-right: 10%;
-
-	/*white-space:nowrap;*/ 
 }
 .menu a {
 	display: inline-block;
-	height: 10vw;	
-	line-height: 10vw;
+	line-height: 80px;
 	text-align: center;
 	border: none;
 	flex: 1;
 	color: #fff;
 	text-decoration: none;
-	/*width: 25%;*/
 }
 
 .menu a:hover {
 	border-bottom: 4px solid #fff;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 /********************************main********************************/
 main {
-	position: absolute;
-	top: 16vw;
+/*	position: absolute;
+	top: 16vw;*/
 	background: #fafafa;
 	width: 100%;
+	overflow: hidden;
 }
 
 .item img{
@@ -300,12 +295,17 @@ main {
 	background-color: #29b078;
 }
 
-.average {
+
+.small {
 	width: 80%;
 	margin: 0 10%;
+}
+.average {
+	width: 100%;
 	display:flex;
 	flex-direction:row;
 }
+
 
 .enterprise {
 	background-color: #fff;
@@ -314,9 +314,9 @@ main {
 }
 
 .enterprise img {
-	width: 15vw;
-	height: 8vw;
-	padding: 2vw 2.5vw;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
 }
 
 
@@ -356,5 +356,51 @@ main {
     border-bottom: #29b078 solid 1px;
 }
 .webs {
+    padding: 5px 0;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #29b078;
+}
+.footer-details {
+    padding: 30px 30px;
+    color: #fff;
+}
+.footer-title {
+    font-size: 16px;
+    color: #fff;
+}
+.title-left {
+    margin-bottom: 60px;
+}
+.title-center {
+    margin-bottom: 30px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    font-size: 14px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+.our-webs {
+    margin-top: 10px;
+}
+.copyright {
+    width: 100%;
+    background-color: #29b078;
+    border-top: 1px solid #32c086;
+}
+.copyright-details {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
     padding: 5px 0;
 }

@@ -1,0 +1,175 @@
+html {
+	font-size: 62.5%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+/*********顶部联系方式**********/
+.header_top {
+	height: 40px;
+}
+
+.header_top span {
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin: 0 0 0 5%;
+	color: #29b078;
+	font-size: 1.5rem;
+}
+.all_contact {
+	float: right;
+	height: 100%;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.contact {
+	float: right;
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+}
+
+.weixin {
+	background: url(../images/task8/weixin.png) no-repeat 50% 50%/35px 35px;
+}
+
+.QQ {
+	background: url(../images/task8/QQ.png) no-repeat 50% 50%/35px 35px;
+}
+
+.weibo {
+	background: url(../images/task8/weibo.png) no-repeat 50% 50%/35px 35px;
+}
+/*********技能树、导航栏**********/
+.header_down {
+	width: 100%;
+	height: 80px;
+	background-color: #29b078;
+}
+.jinengshu {
+	position: relative;
+	top: 10px;
+	left: 5%;
+	width: 120px;
+	height: 60px;
+	display: inline-block;
+	background: url(../images/task8/jinengshu.png) no-repeat 50% 50%/120px 60px;
+
+}
+
+.menu {
+	height: 80px;
+	width: 30%;
+	display:flex;
+	flex-direction:row;
+	float: right;
+	margin-right: 10%;
+}
+.menu a {
+	display: inline-block;
+	line-height: 80px;
+	text-align: center;
+	border: none;
+	flex: 1;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	border-bottom: 4px solid #fff;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/********************************main********************************/
+main {
+	width: 100%;
+}
+
+/*********快人一步，黄色部分**********/
+.main_top_img {
+	display: inline-block;
+	width: 100%;
+	height: 20vh;
+	background: url(../images/task8/companion/main_top_img.png) no-repeat 0 0/100% 100%;
+}
+
+/*********导航**********/
+.index_text {
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+.index_text:hover {
+	text-decoration: none;
+}
+
+.companion_text {
+	font-size: 1rem;
+	color: #29b078;
+	text-decoration: none;
+}
+.companion_text:hover {
+	text-decoration: none;
+}
+
+.daohang_text {
+	margin: 2rem 0;
+}
+
+/*********合作企业**********/
+.main_left {
+	margin-top: 20px;
+	border: 1px solid #e1e1e1;
+}
+
+.main_left_top {
+	padding: .5rem 0;
+	width: auto;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.main_left_box {
+	padding: 1rem 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*text-align-last:justify;*/
+}
+
+.main_left_box a {
+	color: #29b078;
+}
+
+
+.circle {
+  width: 1rem;  
+  height:1rem;  
+  border-radius: 50%;  
+  border: .2rem solid #ff640c;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: .5rem;
+}
+
+.main_left_box a:hover {
+	color: #ff650e;
+	text-decoration: none;
+}
+
+.main_left_box:hover .circle{
+    background-color: #f9a372;
+}
