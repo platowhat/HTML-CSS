@@ -132,6 +132,8 @@ main {
 .main_left {
 	margin-top: 20px;
 	border: 1px solid #e1e1e1;
+/*	text-align:justify;
+    text-align-last:justify;*/
 }
 
 .main_left_top {
@@ -142,12 +144,16 @@ main {
 }
 
 .main_left_box {
+	
 	padding: 1rem 0;
 	display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 
     /*text-align-last:justify;*/
+
+/*	width: 160px;
+    margin-left: 40%;*/
 }
 
 .main_left_box a {
