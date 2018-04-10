@@ -95,6 +95,7 @@ header {
 /********************************main********************************/
 main {
 	width: 100%;
+	background-color: #fafafa;
 }
 
 /*********快人一步，黄色部分**********/
@@ -130,10 +131,9 @@ main {
 
 /*********合作企业**********/
 .main_left {
-	margin-top: 20px;
 	border: 1px solid #e1e1e1;
-/*	text-align:justify;
-    text-align-last:justify;*/
+	background-color: #fff;
+	margin-top: 10px;
 }
 
 .main_left_top {
@@ -144,16 +144,12 @@ main {
 }
 
 .main_left_box {
-	
-	padding: 1rem 0;
-	display: flex;
-    /*justify-content: center;*/
-    align-items: center;
+	padding: 1.5rem 0;
+/*	display: flex;
+	justify-content: center;*/
+	/*align-items: center;*/
 
-    /*text-align-last:justify;*/
-
-/*	width: 160px;
-    margin-left: 40%;*/
+margin-left: 40%;
 }
 
 .main_left_box a {
@@ -178,4 +174,71 @@ main {
 
 .main_left_box:hover .circle{
     background-color: #f9a372;
+}
+
+.main_right {
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.main_right_line {
+	border-top: 1px solid #f0f0f0;
+}
+
+.main_right_box {
+	padding: 20px 0;
+}
+
+.main_right_box img {
+	float: left;
+}
+
+.main_right_text {
+	padding: 0 20px;
+	color: #999;
+}
+
+/********************************footer********************************/
+footer {
+    width: 100%;
+    background-color: #29b078;
+}
+.footer-details {
+    padding: 30px 30px;
+    color: #fff;
+}
+.footer-title {
+    font-size: 16px;
+    color: #fff;
+}
+.title-left {
+    margin-bottom: 60px;
+}
+.title-center {
+    margin-bottom: 30px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    font-size: 14px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+.our-webs {
+    margin-top: 10px;
+}
+.copyright {
+    width: 100%;
+    background-color: #29b078;
+    border-top: 1px solid #32c086;
+}
+.copyright-details {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
 }
