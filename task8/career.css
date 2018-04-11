@@ -1,0 +1,116 @@
+html {
+	font-size: 62.5%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+
+/*********技能树、导航栏**********/
+.header_down {
+	width: 100%;
+	height: 80px;
+	background-color: #29b078;
+}
+.jinengshu {
+	position: relative;
+	top: 10px;
+	left: 5%;
+	width: 120px;
+	height: 60px;
+	display: inline-block;
+	background: url(../images/task8/jinengshu.png) no-repeat 50% 50%/120px 60px;
+
+}
+
+.menu {
+	height: 80px;
+	width: 30%;
+	display:flex;
+	flex-direction:row;
+	float: right;
+	margin-right: 10%;
+}
+.menu a {
+	display: inline-block;
+	line-height: 80px;
+	text-align: center;
+	border: none;
+	flex: 1;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	border-bottom: 4px solid #fff;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************footer********************************/
+footer {
+    width: 100%;
+    background-color: #29b078;
+}
+.footer-details {
+    padding: 30px 30px;
+    color: #fff;
+}
+.footer-title {
+    font-size: 16px;
+    color: #fff;
+}
+.title-left {
+    margin-bottom: 60px;
+}
+.title-center {
+    margin-bottom: 30px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    font-size: 14px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+.our-webs {
+    margin-top: 10px;
+}
+.copyright {
+    width: 100%;
+    background-color: #29b078;
+    border-top: 1px solid #32c086;
+}
+.copyright-details {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+}
