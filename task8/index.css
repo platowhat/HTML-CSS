@@ -309,7 +309,7 @@ main {
 .enterprise {
 	background-color: #fff;
 	box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
-margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .enterprise img {
@@ -331,32 +331,17 @@ margin: 1rem 0;
     align-items: center;
 }
 
-
-.row-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .webs {
     width: 80px;
+    color: #999;
+    padding: 5px 0;
 }
 
-.webs {
-    color: #999;
-}
 .webs a {
     color: #999;
     text-decoration: none;
 }
-.web-links li {
-    border-bottom: #fff solid 1px;
-}
-.web-links li:hover {
-    border-bottom: #29b078 solid 1px;
-}
-.webs {
-    padding: 5px 0;
-}
+
 
 
 
