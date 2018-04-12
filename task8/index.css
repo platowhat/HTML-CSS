@@ -15,12 +15,12 @@ header {
 }
 
 .header_top {
-	height: 40px;
+	height: 30px;
 }
 
 .header_top span {
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 	display: inline-block;
 	margin: 0 0 0 5%;
 	color: #29b078;
@@ -29,14 +29,12 @@ header {
 .all_contact {
 	float: right;
 	height: 100%;
-	width: 30%;
-	margin-right: 5%;
+	width: 20%;
 }
 
 .contact {
-	float: right;
-	width: 20%;
-	height: 100%;
+	width: 35px;
+	height: 35px;
 	display: inline-block;
 }
 
@@ -51,6 +49,7 @@ header {
 .weibo {
 	background: url(../images/task8/weibo.png) no-repeat 50% 50%/35px 35px;
 }
+
 /*******************/
 .header_down {
 	width: 100%;
@@ -129,6 +128,8 @@ main {
 }
 
 .carousel-caption {
+	position: relative;
+	top: 25%;
 	width: 70%;
 	overflow: hidden;
 }
@@ -296,27 +297,24 @@ main {
 }
 
 
-.small {
-	width: 80%;
-	margin: 0 10%;
-}
-.average {
-	width: 100%;
-	
-}
+/******/
 
-
+.main_box_enterprise{
+    text-align: center;
+    
+}
 .enterprise {
-	background-color: #fff;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.enterprise:hover {
 	box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
-	margin: 1rem 0;
+}
+.enterprise-img {
+	margin: 1rem;
 }
 
-.enterprise img {
-	width: 100%;
-	height: 100%;
-	padding: 10px 0;
-}
 
 
 .links {
