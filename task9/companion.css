@@ -1,0 +1,244 @@
+html {
+	font-size: 62.5%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+/*********电话、qq、微信、微博**********/
+.header_top {
+	height: 30px;
+}
+/***电话***/
+.header_top span {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	margin: 0 0 0 5%;
+	color: #29b078;
+	font-size: 1.5rem;
+}
+/***qq、微信、微博***/
+.all_contact {
+	float: right;
+	height: 100%;
+	width: 20%;
+}
+
+.contact {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+
+.weixin {
+	background: url(../images/task9/weixin.png) no-repeat 50% 50%/35px 35px;
+}
+
+.QQ {
+	background: url(../images/task9/QQ.png) no-repeat 50% 50%/35px 35px;
+}
+
+.weibo {
+	background: url(../images/task9/weibo.png) no-repeat 50% 50%/35px 35px;
+}
+
+/*********技能树、导航菜单**********/
+.header_down {
+	width: 100%;
+	height: 4vw;
+	background-color: #29b078;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.jinengshu {
+	width: 6vw;
+	height: 3vw;
+	display: inline-block;
+	background: url(../images/task9/jinengshu.png) no-repeat 50% 50%/100% 100%;
+	margin: 5%;
+}
+
+.menu {
+	height: 4vw;
+	width: 30%;
+	display:flex;
+	flex-direction:row;
+	margin-right: 10%;
+}
+
+.menu a {
+	display: inline-block;
+	line-height: 4vw;
+	text-align: center;
+	border: none;
+	flex: 1;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	border-bottom: 4px solid #fff;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/********************************main********************************/
+main {
+	width: 100%;
+	background-color: #fafafa;
+}
+
+/*********快人一步**********/
+.main_top_img {
+	display: inline-block;
+	width: 100vw;
+	height: 13vw;
+	background: url(../images/task9/companion/main_top_img.png) no-repeat 0 0/100% 100%;
+}
+
+/*********导航**********/
+.index_text {
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+.index_text:hover {
+	text-decoration: none;
+}
+
+.companion_text {
+	font-size: 1rem;
+	color: #29b078;
+	text-decoration: none;
+}
+.companion_text:hover {
+	text-decoration: none;
+}
+
+.daohang_text {
+	margin: 2rem 0;
+}
+
+/*********合作企业**********/
+.main_left {
+	border: 1px solid #e1e1e1;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.main_left_top {
+	padding: .5rem 0;
+	width: auto;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.main_left_box {
+	padding: 1.5rem 0;
+/*	display: flex;
+	justify-content: center;*/
+	/*align-items: center;*/
+
+margin-left: 40%;
+}
+
+.main_left_box a {
+	color: #29b078;
+}
+
+
+.circle {
+  width: 1rem;  
+  height:1rem;  
+  border-radius: 50%;  
+  border: .2rem solid #ff640c;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: .5rem;
+}
+
+.main_left_box a:hover {
+	color: #ff650e;
+	text-decoration: none;
+}
+
+.main_left_box:hover .circle{
+    background-color: #f9a372;
+}
+
+.main_right {
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.main_right_line {
+	border-top: 1px solid #f0f0f0;
+}
+
+.main_right_box {
+	padding: 20px 0;
+}
+
+.main_right_box img {
+	float: left;
+}
+
+.main_right_text {
+	padding: 0 20px;
+	color: #999;
+}
+
+/********************************footer********************************/
+footer {
+    width: 100%;
+    background-color: #29b078;
+}
+/***每个盒子***/
+.footer-details {
+    padding: 30px;
+    color: #fff;
+}
+/***标题***/
+.footer-title {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+/***超链接***/
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    font-size: 1.5rem;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+.our-webs {
+    margin-top: 10px;
+}
+/***最下方***/
+.copyright {
+    width: 100%;
+    background-color: #29b078;
+    border-top: 1px solid #32c086;
+}
+.copyright-details {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 5px 0;
+}
