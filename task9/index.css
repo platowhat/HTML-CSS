@@ -6,6 +6,8 @@ html {
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
 }
 
 /********************************header********************************/
@@ -20,7 +22,7 @@ header {
 
 .header_top_box {
 	float: right;
-	margin: .5rem 2rem;
+	margin: .5rem;
 }
 
 .login {
@@ -49,22 +51,85 @@ header {
 /*********技能树、导航菜单**********/
 .header_down {
 	width: 100%;
-	height: 80px;
+	height: 4rem;
+	background-color: #29b078;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/***技能树***/
+.jinengshu {
+	margin-left: 4rem;
+	width: 6rem;
+	height: 3rem;
+	display: inline-block;
+	background: url(../images/task9/jinengshu.png) no-repeat 50% 50%/100% 100%;
+
+}
+/***导航菜单***/
+/*按钮*/
+.header_button {
+	width: 1.5rem;
+	height: 2.5rem;
+	margin-right: 2rem;
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+.label {
+	margin: 0;
+}
+
+.button_line {
+	display: block;
+	width: 100%;
+	border: 1px solid #666;
+	margin: 4px 0;
+}
+
+/*点击按钮后出现的菜单*/
+.drop_down_menu {
+	width: 100%;
+	height: auto;
 	background-color: #29b078;
 }
 
-.jinengshu {
-	position: relative;
-	top: 10px;
-	left: 5%;
-	width: 120px;
-	height: 60px;
-	display: inline-block;
-	background: url(../images/task9/jinengshu.png) no-repeat 50% 50%/120px 60px;
-
+.drop_down_menu_ul {
+	flex-direction:column;
+	list-style: none;
+	margin: 0;
+	background-color: #29b078;
+	max-height: 0;
+	transition: max-height 0.3s;
 }
 
-.menu {
+.drop_down_menu_ul li {
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.drop_down_menu_text {
+	color: #fff;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.drop_down_menu ul li:hover {
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+.drop_down_menu_text:hover {
+	text-decoration: none;
+}
+
+.header_button:visited .drop_down_menu_ul {
+	max-height: 100px;
+}
+
+/*.menu {
 	height: 80px;
 	width: 30%;
 	display:flex;
@@ -85,9 +150,8 @@ header {
 
 .menu a:hover {
 	border-bottom: 4px solid #fff;
-	box-sizing: border-box;
 	text-decoration: none;
-}
+}*/
 
 /********************************main********************************/
 main {
@@ -185,7 +249,6 @@ main {
 
 .line_left {
 	border-left: 1px dashed #999;
-	box-sizing: border-box;
 	padding: 30px 0;
 }
 /***文字***/
