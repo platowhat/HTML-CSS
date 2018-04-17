@@ -1,0 +1,121 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;	
+}
+/**最顶上电话、登录注册**/
+.header_box1 {
+	width: 100%;
+	height: 30px;
+	background-color: #1376dc;
+}
+/*文字样式*/
+.header_text {
+	font-size: 1vw;
+	color: #fff;
+	line-height: 5vh;
+}
+/*电话位置*/
+.header_phone {
+	margin-left: 10%;
+}
+/*登录注册盒子*/
+.login_registered {
+	margin-right: 10%;
+	height: 5vh;
+	float: right;
+}
+/*登录*/
+.header_login {
+	display: inline-block;
+	text-decoration: none;
+	height: 5vh;
+	line-height: 5vh;
+	padding: 0 1vw;
+}
+/*登录鼠标悬浮*/
+.header_login:hover {
+	text-decoration: none;
+	background-color: #fff;
+	color: #1376dc;
+	padding: 0 3vw;
+}
+/*注册*/
+.header_registered {
+	display: inline-block;
+	text-decoration: none;
+	height: 5vh;
+	line-height: 5vh;
+	padding: 0 1vw;
+}
+/*注册鼠标悬浮*/
+.header_registered:hover {
+	text-decoration: none;
+	background-color: #fff;
+	color: #1376dc;
+	padding: 0 3vw;
+}
+
+/**下方四个按钮**/
+.header_box2 {
+	width: 100%;
+	overflow: hidden;
+}
+
+.header_buttons {
+	width: auto;
+	float: right;
+	margin-right: 10%;
+	display: flex;
+	flex-direction:row;
+}
+
+.header_button {
+	border: none;
+	border-radius: 3px;
+	padding: .5vw 1vw;
+	background-color: #fff;
+	font-size: 1rem;
+}
+
+.header_button:hover {
+	background-color: #1376dc;
+}
+
+.button1 {
+	margin: 2vw 1vw 2vw 0;
+}
+
+.button2 {
+	margin: 2vw 1vw;	
+}
+
+.button3 {
+	margin: 2vw 1vw;	
+}
+
+.button4 {
+	margin: 2vw 0 2vw 1vw;	
+}
+
+/********************************main********************************/
+
+
+
+
+
+
+
+
+
+/********************************footer********************************/

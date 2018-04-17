@@ -1,6 +1,5 @@
 html {
 	font-size: 62.5%;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 * {
@@ -22,7 +21,7 @@ header {
 
 .header_top_box {
 	float: right;
-	margin: .5rem;
+	margin: .5rem 2rem;
 }
 
 .login {
@@ -156,7 +155,7 @@ header {
 		flex: 1;
 		color: #fff;
 		text-decoration: none;
-		font-size: 1.5vw;
+		font-size: 1vw;
 	}
 
 	.menu a:hover {
@@ -190,6 +189,10 @@ main {
 	width:100%;
 	margin:0 auto;
 }
+
+.carousel-caption {
+	margin: 0 -5%;
+}
 /***向左***/
 .toleft {
 	position: absolute;
@@ -219,7 +222,7 @@ main {
 }
 /*********轮播图文字**********/
 .text1 {
-	width: 70%;
+	width: auto;
 	float: right;
 	font-size: 2vw;
 	font-weight: bold;
@@ -382,7 +385,24 @@ main {
 
 
 /************友情链接一栏************/
-/***整栏***/
+.link_text {
+	white-space: nowrap;
+}
+
+.link_text a {
+	width: 77px;
+	color: #999;
+}
+
+.link_text a:hover {
+	color: black;
+}
+
+.link_text a span {
+	float: left;
+}
+
+/***整栏***//*********************************************************************/
 .links {
     width: 100%;
     margin-top: 70px;
@@ -416,7 +436,7 @@ main {
 .webs:hover a {
     color: black;
     text-decoration: none;
-}
+}/*********************************************************************/
 
 /********************************footer********************************/
 footer {
