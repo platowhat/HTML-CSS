@@ -47,7 +47,6 @@ header {
 
 
 
-
 /*********技能树、导航菜单**********/
 .header_down {
 	width: 100%;
@@ -141,22 +140,23 @@ header {
 	}
 	
 	.menu {
-	height: 80px;
-	width: 30%;
-	display:flex;
-	flex-direction:row;
-	float: right;
-	margin-right: 10%;
+		height: 4rem;
+		width: 30%;
+		display:flex;
+		flex-direction:row;
+		float: right;
+		margin-right: 10%;
 	}
 
 	.menu a {
 		display: inline-block;
-		line-height: 80px;
+		line-height: 4rem;
 		text-align: center;
 		border: none;
 		flex: 1;
 		color: #fff;
 		text-decoration: none;
+		font-size: 1.5vw;
 	}
 
 	.menu a:hover {
@@ -389,23 +389,28 @@ main {
     background-color: #fff;
 }
 
-ul {
+.col-md-6 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*list-style: none;*/
 }
 /***一排***/
 .webs {
-    width: 80px;
+    height: 68px;
     color: #999;
     padding: 5px 0;
+    float: left;
 }
+
 /***超链接***/
 .webs a {
     color: #999;
     text-decoration: none;
     float: left;
     font-size: 1.5rem;
+    white-space: nowrap;
+
 }
 
 .webs:hover a {
@@ -458,25 +463,3 @@ footer a:hover {
     padding: 5px 0;
 }
 
-
-
-/*@media (min-width: 1349px) and (max-width: 2000px) {
-   .login {
-   		
-   }
-
-   .registered {
-   		
-   } 
-}
-@media (max-width: 1349px) {
-   .login {
-   		font-size: 20px;
-   		color: red;
-   }
-
-   .registered {
-   		font-size: 20px;
-   		color: red;
-   }  
-}*/
