@@ -201,13 +201,35 @@ main {
 	width: 100%;
 	background-color: #fff;
 }
-
+/*一排中包含全部四个盒子*/
 .process {
-	width: 80%;
-	margin: 0 10%;
+	display: flex;
+	justify-content: flex-end;
 }
+/*一个盒子*/
+.process_box {
+	display: inline-block;
+	text-align: center;
+	width: 140px;
+	height: 70px;
+}
+/*中间横线*/
+.process_line {
+	width: 140px;
+	height: 1px;
+	border: 30px solid red;
+}
+/*中间圆 数字*/
+.process_number {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+}
+/*文字样式*/
+.process_text {
 
-
+}
 
 
 
