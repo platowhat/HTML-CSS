@@ -27,12 +27,10 @@ header {
 /*电话位置*/
 .header_phone {
 	display: inline-block;
-	margin-left: 10%;
 	line-height: 3rem;
 }
 /*登录注册盒子*/
 .login_registered {
-	margin-right: 10%;
 	height: 3rem;
 	float: right;
 }
@@ -82,7 +80,6 @@ header {
 	.header_buttons {
 		width: auto;
 		float: right;
-		margin-right: 10%;
 		display: flex;
 		flex-direction:row;
 	}
@@ -136,7 +133,7 @@ header {
 		width: 2.5rem;
 		height: 2.5rem;
 		float: right;
-		margin: 1rem 10% 1rem 0;
+		margin: 1rem 0;
 		border: 1px solid #999;
 		background: transparent;
 		outline: none;
@@ -216,23 +213,57 @@ main {
 /*中间横线*/
 .process_line {
 	width: 140px;
-	height: 1px;
-	border: 30px solid red;
+	height: 0px;
+	border: 3px solid #ccc;
+	background-color: #ccc;
+	position: relative;
+	top: 32px;
 }
 /*中间圆 数字*/
 .process_number {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: red;
+	background-color: #ccc;
+	color: #fff;
+	font-size: 1rem;
+	position: relative;
+	top: 19px;
+	left: 60px;
 }
 /*文字样式*/
 .process_text {
-
+	height: 20px;
+	margin-top: 20px;
+	font-size: 1.5rem;
+}
+/*橙色*/
+.orange_line{
+	background-color: #ff7f02;
+	border-color: #ff7f02;
+}
+.orange_number{
+	background-color: #ff7f02;
+	border-color: #ff7f02;
+}
+.orange_text{
+	color: #ff7f02;
 }
 
 
+/*请您按照以下步骤来定制您的纸箱 一排*/
+.explain {
+	margin: 1rem 0;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
 
+div.explain:before {
+	content: '';
+	border-left: 2px solid #1376dc;
+	padding-right: 6px;
+}
 
 
 

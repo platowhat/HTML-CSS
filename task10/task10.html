@@ -11,77 +11,114 @@
 </head>
 <body style="background-color: #f9f9f9;">
 	<header>
+		
 		<div class="header_box1">
-			<span class="header_phone header_text">客服电话：400-810-9151</span>
-			<div class="login_registered">
-				<a href="#" class="header_login header_text">登录</a>
-				<a href="#" class="header_registered header_text">注册</a>
-			</div>			
-		</div>
-
-		<!-- 页面放大时，直接显示四个按钮 -->
-		<div class="header_box2">
-			<div class="header_buttons">
-				<button type="submit" class="header_button button1">首页</button>
-				<button type="submit" class="header_button button2">在线定制</button>
-				<button type="submit" class="header_button button3">标准箱</button>
-				<button type="submit" class="header_button button4">品质保障</button>				
+			<div class="container">
+				<span class="header_phone header_text">客服电话：400-810-9151</span>
+				<div class="login_registered">
+					<a href="#" class="header_login header_text">登录</a>
+					<a href="#" class="header_registered header_text">注册</a>
+				</div>			
 			</div>
 		</div>
-
-		<!-- 页面缩小时，通过点击按钮显示四个按钮 -->
-		<div class="header_box3">
-			<div class="header_button_right">
-				<button type="submit" class="header_button1" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-	    			<span class="button_line"></span>
-					<span class="button_line"></span>
-					<span class="button_line"></span>
-				</button>
+		<div class="container">
+			<!-- 页面放大时，直接显示四个按钮 -->
+			<div class="header_box2">
+				<div class="header_buttons">
+					<button type="submit" class="header_button button1">首页</button>
+					<button type="submit" class="header_button button2">在线定制</button>
+					<button type="submit" class="header_button button3">标准箱</button>
+					<button type="submit" class="header_button button4">品质保障</button>				
+				</div>
 			</div>
-			
-			<!-- 点击按钮出现下拉菜单 -->
-			<div class="drop_down_menu collapse" id="navbar-collapse">
-				<ul class="drop_down_menu_ul">
-					<li><a href="#" class="header_button">首页</a></li>
-					<li><a href="#" class="header_button">在线定制</a></li>
-					<li><a href="#" class="header_button">标准箱</a></li>
-					<li><a href="#" class="header_button">品质保障</a></li>
-				</ul>
+
+			<!-- 页面缩小时，通过点击按钮显示四个按钮 -->
+			<div class="header_box3">
+				<div class="header_button_right">
+					<button type="submit" class="header_button1" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		    			<span class="button_line"></span>
+						<span class="button_line"></span>
+						<span class="button_line"></span>
+					</button>
+				</div>
+				
+				<!-- 点击按钮出现下拉菜单 -->
+				<div class="drop_down_menu collapse" id="navbar-collapse">
+					<ul class="drop_down_menu_ul">
+						<li><a href="#" class="header_button">首页</a></li>
+						<li><a href="#" class="header_button">在线定制</a></li>
+						<li><a href="#" class="header_button">标准箱</a></li>
+						<li><a href="#" class="header_button">品质保障</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
 	<main>
-		<!-- 进程 -->
+		<!-- 流程 -->
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-12 col-lg-12">
 					<div class="process">
 						<div class="process_box">
-							<div process_line></div>
-							<div process_number>1</div>
-							<div process_text>1.定制纸箱</div>
+							<div class="process_line orange_line"></div>
+							<div class="process_number orange_number">1</div>
+							<div class="process_text orange_text">1.定制纸箱</div>
 						</div>
 
 						<div class="process_box">
-							<div process_line></div>
-							<div process_number>2</div>
-							<div process_text>2.选择数量</div>
+							<div class="process_line"></div>
+							<div class="process_number">2</div>
+							<div class="process_text">2.选择数量</div>
 						</div>
 
 						<div class="process_box">
-							<div process_line></div>
-							<div process_number>3</div>
-							<div process_text>3.上传附件</div>
+							<div class="process_line"></div>
+							<div class="process_number">3</div>
+							<div class="process_text">3.上传附件</div>
 						</div>
 
 						<div class="process_box">
-							<div process_line></div>
-							<div process_number>4</div>
-							<div process_text>4.确认下单</div>
+							<div class="process_line"></div>
+							<div class="process_number">4</div>
+							<div class="process_text">4.确认下单</div>
 						</div>
 					</div>						
 				</div>
+			</div>	
+			<!-- 流程完 -->
+			<!-- 步骤说明 -->
+			<div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="explain">请您按照以下步骤来定制您的纸箱</div>
+                </div>
+            </div>
+            <!-- 步骤说明完 -->
+            <!-- 选择箱型 -->
+			<div class="select_box">
+				<div class="select_box_top">
+					选择箱型
+				</div>
+				<div class="select_box_down"></div>
 			</div>
+			<!-- 选择箱型完 -->
+			<!-- 确定尺寸 -->
+			<div class="select_size">
+				<div class="select_size_top">
+					确定尺寸
+				</div>
+				<div class="select_size_down"></div>
+			</div>
+			<!-- 确定尺寸完 -->
+			<!-- 选择材质 -->
+			<div class="select_materials">
+				<div class="select_materials_top">
+					选择材质
+				</div>
+				<div class="select_materials_down"></div>
+			</div>
+			<!-- 选择材质完 -->
+			
 		</div>
 	</main>
 
