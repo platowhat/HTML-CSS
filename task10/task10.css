@@ -197,7 +197,15 @@ header {
 
 
 /********************************main********************************/
+main {
+	width: 100%;
+	background-color: #fff;
+}
 
+.process {
+	width: 80%;
+	margin: 0 10%;
+}
 
 
 
