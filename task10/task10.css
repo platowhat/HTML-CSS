@@ -16,31 +16,32 @@ header {
 /**最顶上电话、登录注册**/
 .header_box1 {
 	width: 100%;
-	height: auto;
+	height: 3rem;
 	background-color: #1376dc;
 }
 /*文字样式*/
 .header_text {
 	font-size: 1rem;
 	color: #fff;
-	line-height: 30px;
 }
 /*电话位置*/
 .header_phone {
+	display: inline-block;
 	margin-left: 10%;
+	line-height: 3rem;
 }
 /*登录注册盒子*/
 .login_registered {
 	margin-right: 10%;
-	height: 30px;
+	height: 3rem;
 	float: right;
 }
 /*登录*/
 .header_login {
 	display: inline-block;
 	text-decoration: none;
-	height: 30px;
-	line-height: 30px;
+	height: 3rem;
+	line-height: 3rem;
 	padding: 0 1vw;
 }
 /*登录鼠标悬浮*/
@@ -54,8 +55,8 @@ header {
 .header_registered {
 	display: inline-block;
 	text-decoration: none;
-	height: 30px;
-	line-height: 30px;
+	height: 3rem;
+	line-height: 3rem;
 	padding: 0 1vw;
 }
 /*注册鼠标悬浮*/
@@ -65,48 +66,135 @@ header {
 	color: #1376dc;
 	padding: 0 2vw;
 }
+/***页面放大时，直接显示四个按钮***/
+@media screen and (min-width: 1079px) {
+	/*隐藏header_box3,显示header_box2*/
+	.header_box3 {
+		display: none;
+	}
 
-/**下方四个按钮**/
-.header_box2 {
-	width: 100%;
-	overflow: hidden;
+	/**下方四个按钮**/
+	.header_box2 {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.header_buttons {
+		width: auto;
+		float: right;
+		margin-right: 10%;
+		display: flex;
+		flex-direction:row;
+	}
+	/*包含四个按钮盒子*/
+	.header_button {
+		border: none;
+		border-radius: 3px;
+		padding: .5vw 1rem;
+		background-color: #fff;
+		font-size: 1rem;
+	}
+	/*鼠标悬浮按钮样式*/
+	.header_button:hover {
+		background-color: #1376dc;
+	}
+	/*按钮定位*/
+	.button1 {
+		margin: 2vw 2rem 2vw 0;
+	}
+
+	.button2 {
+		margin: 2vw 2rem;	
+	}
+
+	.button3 {
+		margin: 2vw 2rem;	
+	}
+
+	.button4 {
+		margin: 2vw 0 2vw 2rem;	
+	}
+}
+/****页面缩小时，通过点击按钮显示四个按钮****/
+@media screen and (max-width: 1079px) {
+	/*隐藏header_box2，显示header_box3*/
+	.header_box2 {
+		display: none;
+	}
+
+	.header_box3 {
+		width: 100%;
+	}
+	/*控制按钮盒子*/
+	.header_button_right {
+		width: 100%;
+		overflow: hidden;
+		border-bottom: 1px solid #ccc;
+	}
+	/*控制按钮*/
+	.header_button1 {
+		width: 2.5rem;
+		height: 2.5rem;
+		float: right;
+		margin: 1rem 10% 1rem 0;
+		border: 1px solid #999;
+		background: transparent;
+		outline: none;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+	/*鼠标悬浮控制按钮样式*/
+	.header_button1:hover {
+		background-color: #ccc;
+	}
+
+	/*控制按钮里的三横杠*/
+	.button_line {
+		display: block;
+		width: 60%;
+		border: 1px solid #666;
+		background-color: #666;
+		margin: 4px 20%;
+	}
+
+	/*点击控制按钮出现的菜单*/
+	.drop_down_menu {
+		width: 100%;
+		height: auto;
+	}
+
+	.drop_down_menu_ul {
+		flex-direction:column;/*一格一排排列，自上而下*/
+		list-style: none;
+		margin: 0;
+	}
+
+	.drop_down_menu_ul li {
+		width: 100%;
+		text-align: center;
+		padding: 1rem 0;
+		border-bottom: 1px solid #eee;
+	}
+	/*鼠标悬浮那排背景样式*/
+	.drop_down_menu ul li:hover {
+		border-radius: 3px;
+		background-color: #1376dc;
+	}
+	/*鼠标悬浮那排文字样式*/
+	.drop_down_menu ul li:hover a {
+		color: #fff;
+	}
+
+	.header_button {
+		font-size: 1rem;
+		color: #1376dc;
+	}
+
+	.header_button:hover {
+		text-decoration: none;
+	}
 }
 
-.header_buttons {
-	width: auto;
-	float: right;
-	margin-right: 10%;
-	display: flex;
-	flex-direction:row;
-}
-
-.header_button {
-	border: none;
-	border-radius: 3px;
-	padding: .5vw 1vw;
-	background-color: #fff;
-	font-size: 1rem;
-}
-
-.header_button:hover {
-	background-color: #1376dc;
-}
-
-.button1 {
-	margin: 2vw 1vw 2vw 0;
-}
-
-.button2 {
-	margin: 2vw 1vw;	
-}
-
-.button3 {
-	margin: 2vw 1vw;	
-}
-
-.button4 {
-	margin: 2vw 0 2vw 1vw;	
-}
 
 /********************************main********************************/
 

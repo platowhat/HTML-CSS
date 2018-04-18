@@ -19,12 +19,34 @@
 			</div>			
 		</div>
 
+		<!-- 页面放大时，直接显示四个按钮 -->
 		<div class="header_box2">
 			<div class="header_buttons">
 				<button type="submit" class="header_button button1">首页</button>
 				<button type="submit" class="header_button button2">在线定制</button>
 				<button type="submit" class="header_button button3">标准箱</button>
 				<button type="submit" class="header_button button4">品质保障</button>				
+			</div>
+		</div>
+
+		<!-- 页面缩小时，通过点击按钮显示四个按钮 -->
+		<div class="header_box3">
+			<div class="header_button_right">
+				<button type="submit" class="header_button1" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+	    			<span class="button_line"></span>
+					<span class="button_line"></span>
+					<span class="button_line"></span>
+				</button>
+			</div>
+			
+			<!-- 点击按钮出现下拉菜单 -->
+			<div class="drop_down_menu collapse" id="navbar-collapse">
+				<ul class="drop_down_menu_ul">
+					<li><a href="#" class="header_button">首页</a></li>
+					<li><a href="#" class="header_button">在线定制</a></li>
+					<li><a href="#" class="header_button">标准箱</a></li>
+					<li><a href="#" class="header_button">品质保障</a></li>
+				</ul>
 			</div>
 		</div>
 	</header>
