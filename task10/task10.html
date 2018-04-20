@@ -109,7 +109,7 @@
 				<div class="select_box_down">
 					<div class="select_box_down_left">
 						<div class="box_radio ">
-		                    <input type="radio" name="box-radio" value="box1" id="box1" checked>
+		                    <input type="radio" name="box-radio" value="box1" id="box1">
 		                    <label for="box1">对口箱</label>
 		                </div>
 
@@ -149,19 +149,57 @@
 				<div class="select_size_down">
 					<div class="select_size_down_left">
 						<div class="outside">
-							<div class="outside_button">
-								<input type="radio" name="size-radio" value="size1" id="size1" checked>
-		                    	<label for="size1">外径</label>
-							</div>	
-							长宽高	                    
+							<div class="size_radio">
+								<input type="radio" name="size-radio" value="size1" id="size1">
+	                    		<label for="size1">外径</label>
+							</div>
+							
+	                    	<div class="outside_enter">
+	                    		<div class="outside_length">
+	                    			<span class="enter_name">长</span>
+		                    		<input class="enter_text" type="text" name="length" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>
+
+	                    		<div class="outside_width">
+	                    			<span class="enter_name">宽</span>
+		                    		<input class="enter_text" type="text" name="width" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>
+
+	                    		<div class="outside_height">
+	                    			<span class="enter_name">高</span>
+		                    		<input class="enter_text" type="text" name="height" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>               		
+							</div>								                    
 		                </div>
 
 		                <div class="inside">
-		                	<div class="inside_button">
-		                		<input type="radio" name="size-radio" value="size2" id="size2">
-		                    	<label for="size2">内径</label>
-		                	</div>	
-							长宽高
+	                		<div class="size_radio">
+	                			<input type="radio" name="size-radio" value="size2" id="size2">
+	                    		<label for="size2">内径</label>
+	                		</div>
+	                		
+	                    	<div class="inside_enter">
+	                    		<div class="inside_length">
+	                    			<span class="enter_name">长</span>
+		                    		<input class="enter_text" type="text" name="length" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>
+
+	                    		<div class="inside_width">
+	                    			<span class="enter_name">宽</span>
+		                    		<input class="enter_text" type="text" name="width" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>
+
+	                    		<div class="inside_height">
+	                    			<span class="enter_name">高</span>
+		                    		<input class="enter_text" type="text" name="height" size="4">
+		                    		<span class="enter_unit">mm</span>
+	                    		</div>               		
+	                    	</div>						
 		                </div>
 		            </div>
 
@@ -180,13 +218,104 @@
 		<!-- 确定尺寸完 -->
 
 		<!-- 选择材质 -->
-		
+		<div class="container select_materials">
+			<div class="row">
+				<div class="col-xs-12 select_materials_top">
+					<span class="select_materials_text">选择材质</span>
+				</div>
+
+				<div class="select_materials_down">
+					<div class="select_materials_down_left">
+						<div class="materials_radio ">
+		                    <input type="radio" name="materials-radio" value="materials1" id="materials1">
+		                    <label for="materials1">A瓦优质</label>
+		                </div>
+
+		                <div class="materials_radio">
+		                    <input type="radio" name="materials-radio" value="materials2" id="materials2">
+		                    <label for="materials2">B瓦优质</label>
+		                </div>
+
+		                <div class="materials_radio">
+		                    <input type="radio" name="materials-radio" value="materials3" id="materials3">
+		                    <label for="materials3">E瓦优质</label>
+		                </div>
+
+		                <div class="materials_radio">
+		                    <input type="radio" name="materials-radio" value="materials3" id="materials3">
+		                    <label for="materials3">AB瓦优质</label>
+		                </div>
+
+		                <div class="materials_radio">
+		                    <input type="radio" name="materials-radio" value="materials3" id="materials3">
+		                    <label for="materials3">BE瓦优质</label>
+		                </div>
+		            </div>
+
+					<div class="select_materials_down_right">
+		                <div class="select_menu">
+		                    <select name="materials-radio" id="materials-radio">
+		                        <option value="">查看详情</option>
+		                        <option value="materials1">A瓦优质</option>
+		                        <option value="materials2">B瓦优质</option>
+		                        <option value="materials3">E瓦优质</option>
+		                        <option value="materials3">AB瓦优质</option>
+		                        <option value="materials3">BE瓦优质</option>
+		                    </select>
+		                </div>
+					</div>	
+				</div>									
+			</div>
+		</div>
 		<!-- 选择材质完 -->
-			
+		<!-- 下一步按钮 -->
+		<div class="next_button_box">
+			<button class="next_button" type="submit" name="next">下一步</button>
+		</div>
+		<!-- 下一步按钮完 -->
 		
 	</main>
 
+	<footer>
+		<div class="footer_top">
+			<div class="container">
+				<div class="row footer_top_boxs">
+					<div class="col-xs-12 col-md-4 footer_media1">
+						<div class="footer_box1">
+							<p>51包装网——纸箱包装首选平台</p>
+						</div>
+					</div>
 
+					<div class="col-xs-12 col-md-4 footer_media2">
+						<div class="footer_box2">
+							<a href="#" class="footer_box2_a">关于我们</a>
+							<a href="#" class="footer_box2_a">配送流程</a>
+							<a href="#" class="footer_box2_a">联系我们</a>
+							<a href="#" class="footer_box2_a">下单指南</a>
+							<a href="#" class="footer_box2_a">媒体介绍</a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 footer_media3">
+						<div class="footer_box3">
+							<div class="contact_style">
+								<span>TEL：400-0000-000</span>
+								<span>企业QQ：123456789</span>
+								<span>微信号：XXXXXXX</span>
+							</div>
+							<img src="../images/task10/QR code.png">
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>			
+		</div>
+		<div class="footer_down">
+			<pre><span class="footer_down_box">北京五一包装科技有限公司Copyright ©2015   51baozhuang.com015  All rights reserved.  京icp备99999999-1</span></pre>
+		</div>
+	</footer>
 
 
 

@@ -90,6 +90,7 @@ header {
 		padding: .5vw 1rem;
 		background-color: #fff;
 		font-size: 1rem;
+		/*white-space: nowrap;*/
 	}
 	/*鼠标悬浮按钮样式*/
 	.header_button:hover {
@@ -305,19 +306,20 @@ div.explain:before {
 	padding-right: 6px;
 }
 
-.select_box {
+.select_box, .select_size, .select_materials {
 	width: 100%;
 }
 
 /*三个小标题的盒子*/
-.select_box_top, .select_size_top {
+.select_box_top, .select_size_top, .select_materials_top {
 	background-color: #f5f5f5;
 }
 /*三个小标题的文字*/
-.select_box_text, .select_size_text {
+.select_box_text, .select_size_text, .select_materials_text {
 	display: inline-block;
 	font-size: 1.8rem;
 	color: #1376dc;
+	padding: .3rem 0;
 }
 /*选择箱型前的图标*/
 .select_box_text:before {
@@ -330,18 +332,18 @@ div.explain:before {
 	margin-right: .5rem;
 }
 
-.select_box_down {
+.select_box_down, .select_size_down, .select_materials_down {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 /*下方包含三个单选和下拉菜单盒子*/
-.select_box_down_left {
-	width: 70%;
+.select_box_down_left, .select_size_down_left, .select_materials_down_left {
+	width: 80%;
 }
 
 /*每个按钮*/
-.box_radio {
+.box_radio, .materials_radio {
 	display: inline-block;
 	padding: 2rem;
 }
@@ -354,9 +356,10 @@ div.explain:before {
 	top: 1rem;
 }
 
-.select_box_down_right {
-	width: 30%;
-	text-align: center;
+.select_box_down_right, .select_size_down_right, .select_materials_down_right{
+	width: 20%;
+	display: flex;/*下拉按钮右对齐*/
+	justify-content: flex-end;
 }
 
 @media screen and (max-width: 771px) {
@@ -378,7 +381,28 @@ div.explain:before {
 
 	.select_box_down_right {
 		width: 100%;
-		text-align: center;
+	}
+}
+
+@media screen and (min-width: 2698px) {
+	/*下方包含三个单选和下拉菜单盒子*/
+	.select_box_down_left {
+		width: 100%;
+	}
+
+	/*每个按钮*/
+	.box_radio {
+		display: block;
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	/*下拉菜单*/
+	.select_menu {
+		display: inline-block;
+	}
+
+	.select_box_down_right {
+		width: 100%;
 	}
 }
 
@@ -396,45 +420,196 @@ div.explain:before {
 	background: url(../images/task10/size.png) no-repeat 50% 50%/100% 100%;
 	margin-right: .5rem;
 }
-.select_size_down {
+
+.size_radio {
+	padding: 1rem 2rem;
+	display: inline-block;
+}
+
+.outside_enter,.inside_enter {
+	display: inline-block;
+}
+.enter_name, .enter_text, .enter_unit {
+	margin: .5rem 0;
+}
+.outside_length, .outside_width, .outside_height, .inside_length, .inside_width, .inside_height {
+	display: inline-block;
+	margin-left: 2rem;
+}
+
+@media screen and (max-width: 771px) {
+	.select_size_down {
+		width: 100%;
+	}
+	.select_size_down_left {
+		width: 100%;
+	}
+	.select_size_down_right {
+		width: 100%;
+	}
+	.outside_length, .outside_width, .outside_height, .inside_length, .inside_width, .inside_height {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 2698px) {
+	.select_size_down {
+		width: 100%;
+	}
+	.select_size_down_left {
+		width: 100%;
+	}
+	.select_size_down_right {
+		width: 100%;
+	}
+	.outside_length, .outside_width, .outside_height, .inside_length, .inside_width, .inside_height {
+		width: 100%;
+	}
+}
+
+
+/*选择材质前的图标*/
+.select_materials_text:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;/*前面图标垂直居中*/
+	background: url(../images/task10/materials.png) no-repeat 50% 50%/100% 100%;
+	margin-right: .5rem;
+}
+
+@media screen and (max-width: 771px) {
+	/*下方包含三个单选和下拉菜单盒子*/
+	.select_materials_down_left {
+		width: 100%;
+	}
+
+	/*每个按钮*/
+	.materials_radio {
+		display: block;
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	/*下拉菜单*/
+	.select_menu {
+		display: inline-block;
+	}
+
+	.select_materials_down_right {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 2698px) {
+	/*下方包含三个单选和下拉菜单盒子*/
+	.select_materials_down_left {
+		width: 100%;
+	}
+
+	/*每个按钮*/
+	.materials_radio {
+		display: block;
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	/*下拉菜单*/
+	.select_menu {
+		display: inline-block;
+	}
+
+	.select_materials_down_right {
+		width: 100%;
+	}
+}
+
+
+/*下一步按钮*/
+.next_button_box {
 	width: 100%;
+	height: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #eee;
 }
-.select_size_down_left {
-	width: 70%;
+.next_button {
+	width: 8rem;
+	height: 3rem;
+	border-radius: 5px;
+	background: #cd494c;
+	color: white;
+	margin: 10rem 0;
+	border: none;
 }
-.select_size_down_right {
-	width: 30%;
-	text-align: center;
-}
-
-
-
-
-
-
-
-
-
-.select_top_img2:before {
-	content: '';
-	width: 23px;
-	height: 23px;
-	display: inline-block;
-	background: url(../images/task10/size.png) no-repeat 50% 50%/23px 23px;
-	margin-right: .5rem;
-}
-
-.select_top_img3:before {
-	content: '';
-	width: 23px;
-	height: 23px;
-	display: inline-block;
-	background: url(../images/task10/materials.png) no-repeat 50% 50%/23px 23px;
-	margin-right: .5rem;
-}
-
 
 
 /********************************footer********************************/
+footer {
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.footer_top {
+	width: 100%;
+}
+
+.footer_top_boxs {
+	width: 100%;
+	padding: 3rem 0;
+}
+
+.footer_box1, .footer_box2, .footer_box3 {
+	padding: .5rem;
+}
+
+.footer_box3 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.footer_box2_a {
+	display: inline-block;
+	padding: .5rem;
+	text-decoration: none;
+	color: #999;
+	white-space: nowrap;
+}
+/*3*/
+.contact_style {
+	display: flex;
+	flex-direction: column;/*自上而下排列*/
+	float: left;
+}
+
+.contact_style span {
+	display: inline-block;
+}
+
+@media screen and (max-width: 1079px) {
+	.footer_media1, .footer_media2, .footer_media3 {
+		width: 100px;
+		display: block;
+	}
+
+	.footer_box1, .footer_box2, .footer_box3 {
+		padding: .5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+
+
+.footer_down pre {
+	width: 100%;
+	background-color: #1376dc;
+	color: #fff;
+}
+
+.footer_down_box {
+	width: 100%;
+	text-align: center;
+}
