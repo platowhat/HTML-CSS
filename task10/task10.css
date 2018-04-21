@@ -549,67 +549,130 @@ footer {
 	background-color: #f5f5f5;
 }
 
-.footer_top {
-	width: 100%;
-}
-
 .footer_top_boxs {
 	width: 100%;
+	height: auto;
 	padding: 3rem 0;
+	overflow: hidden;
 }
 
-.footer_box1, .footer_box2, .footer_box3 {
-	padding: .5rem;
+.footer_top_box1, .footer_top_box2, .footer_top_box3 {
+	width: 33.333%;
+	float: left;
 }
 
-.footer_box3 {
+.footer_top_box1 {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	height: auto;
+}
+
+.footer_top_box2 {
+	padding: 0 2rem;
 }
 
 .footer_box2_a {
 	display: inline-block;
 	padding: .5rem;
-	text-decoration: none;
-	color: #999;
-	white-space: nowrap;
 }
-/*3*/
-.contact_style {
+
+
+.footer_top_box3 {
+	padding-left: 1rem;
 	display: flex;
-	flex-direction: column;/*自上而下排列*/
-	float: left;
+	flex-direction: row;
+}
+
+.contact_style {
+	width: auto;
 }
 
 .contact_style span {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	padding: .5rem 0;
+}
+
+.footer_box3_img {
+	margin: .5rem 1rem 1rem 1rem;
+}
+
+
+
+/*页面最下方一排*/
+.footer_down_boxs {
+	background-color: #1376dc;
+}
+
+.footer_down_span {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: .5rem 1rem;
 }
 
 @media screen and (max-width: 1079px) {
-	.footer_media1, .footer_media2, .footer_media3 {
-		width: 100px;
-		display: block;
+	.footer_top_boxs {
+		width: 100%;
 	}
 
-	.footer_box1, .footer_box2, .footer_box3 {
-		padding: .5rem;
+	.footer_top_box1, .footer_top_box2, .footer_top_box3 {
+		width: 100%;
 		display: flex;
-		align-items: center;
 		justify-content: center;
+		padding: 1rem;
+	}
+
+	.contact_style span {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 337px) {
+	.footer_top_box3 {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_box3_img {
+		width: 100px;
+		height: 100px;
+		margin: .5rem 1rem 1rem 1rem;
+		position: relative;
+		left: 20%;
+	}
+
+	.contact_style span {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 2024px) {
+	.footer_top_boxs {
+		width: 100%;
+	}
+
+	.footer_top_box1, .footer_top_box2, .footer_top_box3 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 1rem;
+	}
+
+	.footer_top_box3 {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_box3_img {
+		width: 200px;
+		height: 200px;
+		margin: .5rem 1rem 1rem 1rem;
+		position: relative;
+		left: 40%;
+	}
+
+	.contact_style span {
+		text-align: center;
 	}
 }
 
 
-
-
-.footer_down pre {
-	width: 100%;
-	background-color: #1376dc;
-	color: #fff;
-}
-
-.footer_down_box {
-	width: 100%;
-	text-align: center;
-}
