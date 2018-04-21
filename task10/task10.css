@@ -68,7 +68,7 @@ header {
 @media screen and (min-width: 1079px) {
 	/*隐藏header_box3,显示header_box2*/
 	.header_box3 {
-		display: none;
+		display: none;		
 	}
 
 	/**下方四个按钮**/
@@ -90,7 +90,6 @@ header {
 		padding: .5vw 1rem;
 		background-color: #fff;
 		font-size: 1rem;
-		/*white-space: nowrap;*/
 	}
 	/*鼠标悬浮按钮样式*/
 	.header_button:hover {
@@ -385,7 +384,6 @@ div.explain:before {
 }
 
 @media screen and (min-width: 2698px) {
-	/*下方包含三个单选和下拉菜单盒子*/
 	.select_box_down_left {
 		width: 100%;
 	}
