@@ -240,6 +240,7 @@ main {
 	height: 20px;
 	margin-top: 20px;
 	font-size: 1.5rem;
+	color: #999;
 }
 /*橙色*/
 .orange_line {
@@ -253,7 +254,7 @@ main {
 .orange_text{
 	color: #ff7f02;
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 899px) {
 	.process {
 		width: 100%;
 	}
@@ -316,15 +317,15 @@ div.explain:before {
 /*三个小标题的文字*/
 .select_box_text, .select_size_text, .select_materials_text {
 	display: inline-block;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	color: #1376dc;
 	padding: .3rem 0;
 }
 /*选择箱型前的图标*/
 .select_box_text:before {
 	content: '';
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	display: inline-block;
 	vertical-align: middle;/*前面图标垂直居中*/
 	background: url(../images/task10/box.png) no-repeat 50% 50%/100% 100%;
@@ -339,12 +340,14 @@ div.explain:before {
 /*下方包含三个单选和下拉菜单盒子*/
 .select_box_down_left, .select_size_down_left, .select_materials_down_left {
 	width: 80%;
+	padding-left: 1.5rem; 
 }
 
 /*每个按钮*/
 .box_radio, .materials_radio {
 	display: inline-block;
-	padding: 2rem;
+	padding: 2rem 1.5rem;
+	color: #999;
 }
 
 /*下拉菜单*/
@@ -352,38 +355,57 @@ div.explain:before {
 	display: inline-block;
 	position: relative;
 	right: 1rem;
-	top: 1rem;
+	color: #999;
 }
 
+select {
+	/*关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	background: url(../images/task10/select.png) no-repeat scroll 100% 0/auto 100%;
+	/*非框架时，为下拉小箭头留出一点位置，避免被文字覆盖*/
+	padding-right: 20px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+}
+/***************************************************************/
+label {
+	padding-left: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label{
+    position: relative;
+}
+input[type="radio"] + label::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+input[type="radio"]:checked + label::before{
+    background: #fff;
+    border: 5px solid #1d7ad9;
+}
+
+
+/******************************************************************/
 .select_box_down_right, .select_size_down_right, .select_materials_down_right{
 	width: 20%;
 	display: flex;/*下拉按钮右对齐*/
 	justify-content: flex-end;
+	align-items: center;
 }
 
 @media screen and (max-width: 771px) {
 	/*下方包含三个单选和下拉菜单盒子*/
-	.select_box_down_left {
-		width: 100%;
-	}
-
-	/*每个按钮*/
-	.box_radio {
-		display: block;
-		padding: 1rem 0 1rem 1rem;
-	}
-
-	/*下拉菜单*/
-	.select_menu {
-		display: inline-block;
-	}
-
-	.select_box_down_right {
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 2698px) {
 	.select_box_down_left {
 		width: 100%;
 	}
@@ -411,8 +433,8 @@ div.explain:before {
 /*确认尺寸前的图标*/
 .select_size_text:before {
 	content: '';
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	display: inline-block;
 	vertical-align: middle;/*前面图标垂直居中*/
 	background: url(../images/task10/size.png) no-repeat 50% 50%/100% 100%;
@@ -422,6 +444,7 @@ div.explain:before {
 .size_radio {
 	padding: 1rem 2rem;
 	display: inline-block;
+	color: #999;
 }
 
 .outside_enter,.inside_enter {
@@ -432,7 +455,8 @@ div.explain:before {
 }
 .outside_length, .outside_width, .outside_height, .inside_length, .inside_width, .inside_height {
 	display: inline-block;
-	margin-left: 2rem;
+	margin-left: 2.5rem;
+	color: #999;
 }
 
 @media screen and (max-width: 771px) {
@@ -468,8 +492,8 @@ div.explain:before {
 /*选择材质前的图标*/
 .select_materials_text:before {
 	content: '';
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	display: inline-block;
 	vertical-align: middle;/*前面图标垂直居中*/
 	background: url(../images/task10/materials.png) no-repeat 50% 50%/100% 100%;
