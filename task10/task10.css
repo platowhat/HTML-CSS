@@ -9,6 +9,13 @@ html {
 	box-sizing: border-box;
 }
 
+
+@media screen and (max-width: 425px) {
+	.container {
+		width: 90% !important; 
+		margin: 0 5% !important;	
+	}
+}
 /********************************header********************************/
 header {
 	width: 100%;	
@@ -64,6 +71,25 @@ header {
 	color: #1376dc;
 	padding: 0 2vw;
 }
+@media screen and (max-width: 320px) {
+	.header_text {
+		font-size: .5rem;
+		color: #fff;
+	}
+	.header_box1 {
+		width: 100%;
+		height: 6rem;
+		background-color: #1376dc;
+	}
+	.container {
+		text-align: center;
+	}
+	.header_phone, .login_registered {
+		width: 100%;
+	}
+}
+
+
 /***页面放大时，直接显示四个按钮***/
 @media screen and (min-width: 1079px) {
 	/*隐藏header_box3,显示header_box2*/
@@ -340,7 +366,6 @@ div.explain:before {
 /*下方包含三个单选和下拉菜单盒子*/
 .select_box_down_left, .select_size_down_left, .select_materials_down_left {
 	width: 80%;
-	padding-left: 1.5rem; 
 }
 
 /*每个按钮*/
@@ -370,29 +395,27 @@ select {
 	border: 1px solid #ddd;
 }
 /***************************************************************/
-label {
-	padding-left: 20px;
-}
-input[type="radio"]{
-    display: none;
-}
-input[type="radio"] + label{
-    position: relative;
-}
-input[type="radio"] + label::before{
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    border: 1px solid #666;
+/*外面打圈*/
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
     border-radius: 50%;
+    border: 1px solid #999;
 }
-input[type="radio"]:checked + label::before{
-    background: #fff;
-    border: 5px solid #1d7ad9;
+/*选择后*/
+input[type="radio"]:checked + label::before {
+    background-color: #fff;
+    border: .35em solid #1376dc; 
+    background-clip: content-box;
+}
+/*隐藏原来圈的样式*/
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
 }
 
 
@@ -442,7 +465,7 @@ input[type="radio"]:checked + label::before{
 }
 
 .size_radio {
-	padding: 1rem 2rem;
+	padding: 1rem 1.5rem;
 	display: inline-block;
 	color: #999;
 }
@@ -455,7 +478,7 @@ input[type="radio"]:checked + label::before{
 }
 .outside_length, .outside_width, .outside_height, .inside_length, .inside_width, .inside_height {
 	display: inline-block;
-	margin-left: 2.5rem;
+	margin-left: 1rem;
 	color: #999;
 }
 
@@ -575,6 +598,7 @@ footer {
 	width: 100%;
 	height: auto;
 	padding: 3rem 0;
+	color: #999;
 	overflow: hidden;
 }
 
@@ -596,7 +620,14 @@ footer {
 .footer_box2_a {
 	display: inline-block;
 	padding: .5rem;
+	color: #999;
 }
+
+.footer_box2_a:hover {
+	color: #1376dc;
+	text-decoration: none;
+}
+
 
 
 .footer_top_box3 {
