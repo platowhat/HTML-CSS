@@ -1,0 +1,223 @@
+html {
+	font-size: 62.5%;
+	font-family: "宋体", sans-serif;
+} 
+
+/* * 是通配符，此处表示所有的元素的对齐方式以及和父类之间的间距都为0*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/**************************************header*****************************************/
+header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 4rem;
+	text-align: center;
+	background-color: #5fc0cd;
+	white-space: nowrap;/*强制不换行*/
+}
+
+.button_left {    
+    width: 30%;
+    height: 3rem;    
+    border-radius: 5px 0px 0px 5px;
+	margin-top: .5rem;
+    font-size: 2rem;
+	border: 0px;
+	background: #55a8b3;/*左按钮背景色*/
+	color: #fff;
+}
+
+.button_right {
+    width: 30%;
+    height: 3rem;
+    margin-left: -1rem;
+	border-radius: 5px 5px 5px 5px;
+	border: 0px;
+	border-color: #5fc0cd;
+	margin-top: .5rem;
+    font-size: 2rem;
+	background: #fff;
+	color: #5fc0cd;/*右按钮文字颜色，与header背景色一样*/
+}
+
+.button_gps {
+	position: absolute;
+	width: 1.8rem;
+	height: 2rem;
+	float: right;
+	right: 1rem;
+	top: 1rem;
+	background: url(../../images/task12/task12-6/gpsa.png) no-repeat 0 0/1.8rem 2rem;
+	border: none;
+}
+/**************************************main*****************************************/
+main {
+	padding-top: 4rem;
+	padding-bottom: 8rem;
+	overflow: hidden;
+}
+/***下拉菜单***/
+nav {
+	z-index: 100;
+	position: fixed;
+	font-size: 1.5rem;
+	color: #999;	
+	width: 100%;
+	background-color: #fff;
+	height: 3rem;
+	white-space: nowrap;/*强制不换行*/
+}
+/***所在地、食宿、病人情况盒子***/
+.banner {
+	float: left;
+	text-align: center;
+	width: 33.33%;
+	line-height: 3rem;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+/***中间竖线***/
+.ver_line {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	box-sizing: border-box;/*中间div左右的border设置了宽度，最右边的div会因为空间不够移动到下一排（浮动），这一句代码能解决border宽度带来的div换行的麻烦*/
+}
+/***向下箭头***/
+.arrow {
+	position: relative;
+	top: 1rem;
+	width: 0px;
+	height: 0px;
+	margin-left: 0.5rem;
+	border-top: 0.6rem solid #999;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;    
+}
+
+a {
+	text-decoration: none;/*去超链接下划线*/
+}
+
+.banner ul {             
+    max-height: 0px;
+    transition: max-height 0.3s;
+}
+
+.banner:hover {
+    background-color: #eee;
+}
+
+.banner:hover ul {
+    display: block;
+    background-color: #eee;
+    text-align: center;
+    max-height: 24rem;
+}
+
+.bottom_line li {
+	list-style: none;
+	border-top: 1px solid #eee;
+}
+
+/*******************info_box*********************/
+.info_box {
+	position: relative;
+	top: 3rem;
+	width: 100%;
+	height: 8rem;
+	border-bottom: 1px solid #eee;
+	font-size: 1.5rem;
+}
+
+.box {
+	position: relative;
+	top: 1rem;
+	display: flex;
+	align-items: center;
+	padding-left: 10%;
+	width: 100%;
+	height: 25%;
+}
+
+.time_png {
+	background: url(../../images/task12/task12-6/time.png) no-repeat 2% 50%/1.5rem 1.5rem;
+}
+
+.gpsb_png {
+	background: url(../../images/task12/task12-6/gpsb.png) no-repeat 2% 50%/1.5rem 1.5rem;
+}
+
+.time {
+	font-size: 1.6rem;
+	width: 58%;
+	display:inline-block;
+	overflow: hidden; /*自动隐藏文字*/
+	text-overflow: ellipsis;/*文字隐藏后添加省略号*//*display:flex;的时候不行，当display:block;的时候就行，说明这行代码需要在一个块状元素里面，并且还要设置宽度，溢出才会有效果*/
+	white-space: nowrap;/*强制不换行*/
+}
+
+.red_text {
+	font-size: 1.5rem;
+	width: 30%;
+	text-align: center;
+	color: red;
+	white-space: nowrap;/*强制不换行*/
+}
+
+.toright {
+	width: 1rem;
+	height: 1rem; 
+	margin-left: 3%;
+}
+
+.gray_text {
+	color: #999;
+}
+
+/**************************************footer*****************************************/
+footer {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 4rem;
+	text-align: center;
+	bottom: 0px;
+	background-color: #eee;
+}
+
+.home {
+	font-size: 1.5rem;
+	color: #5fc0cd;
+	width: 20%;
+	height: 100%;
+	border: none;
+	background: url(../../images/task12/task12-6/home.png) no-repeat scroll 50% 0/2.5rem 2.5rem;
+}
+
+.add {
+	width: 20%;
+	height: 100%;
+	border: none;
+	background: url(../../images/task12/task12-6/add.png) no-repeat scroll 50% 50%/3.8rem 3.8rem;
+}
+
+.user {
+	font-size: 1.5rem;
+	color: #999;
+	width: 20%;
+	height: 100%;
+	border: none;
+	background: url(../../images/task12/task12-6/user.png) no-repeat scroll 50% 0/2.5rem 2.5rem;
+}
+
+.footer_text {
+	position: absolute;
+	bottom: 0;
+	width: 20%;
+}
+
+
