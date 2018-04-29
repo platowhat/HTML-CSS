@@ -7,81 +7,101 @@ html {
     padding:0;    
 }
 
+/*********************************定义变量***************************************/
+$blue-color: #5fc0cd;
+$white-color: white;
+$lightgrey-color: #e1e5e7;
+$norm-height: 1rem;
+$norm-fontsize: 1rem;
+
+
+
 /**********************************header****************************************/
 header {
 	position: fixed;
-	width: 100%;
-	background-color: #5fc0cd;
 	z-index: 100;
-	color: white;
-	height: 4rem;
+	width: 100%;
+	height: $norm-height * 4;
+	color: $white-color;
+	background-color: $blue-color;
 }
 
-header a {
-	width: 2rem;
-	height: 4rem;
-	background: url(../../images/task12/task12-5/back.png) no-repeat 50% 50%/100% 100%;
-	display: inline-block;
-	float: left;
-	margin-left: .5rem;
+header {
+	a {
+		position: relative;
+		left: $norm-height * 0.5;
+		z-index: 200;
+		display: inline-block;
+		width: $norm-height * 2;
+		height: $norm-height * 4;
+		background: url(../../images/task12/task12-5/back.png) no-repeat 50% 50%/100% 100%;
+	}
 }
 
 .header_title {
-	display: inline-block;
-	width: 100%;
-	height: 4rem;
-	line-height: 4rem;
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 100;
+	display: inline-block;
+	width: 100%;
+	height: $norm-height * 4;
+	font-size: $norm-fontsize * 2;
+	line-height: $norm-height * 4;
 	text-align: center;
-	font-size: 2rem;
 }
 
 /***********************************main*************************************/
 main {
-	width: 100%;
-	margin-top: 4rem;
 	position: absolute;
-	margin-bottom: 140px;
+	width: 100%;
+	margin: {
+		top: $norm-height * 4;
+		bottom: 140px;
+	}
 }
 /***背景***/
 .main_banner {
-	height: 15rem;
-	width: 100%;
-	background: url(../../images/task12/task12-5/banner.png) no-repeat 50% 50%/100% 100%;
 	display: flex;
     justify-content: flex-start;
     align-items: center;
+	width: 100%;
+	height: $norm-height * 15;
+	background: url(../../images/task12/task12-5/banner.png) no-repeat 50% 50%/100% 100%;
 
 }
 /***用户头像***/
-.main_banner_user img {
-    width: 6rem;
-    height: 6rem;
-    margin-left: 1rem;
+.main_banner_user {
+	img {
+	    width: $norm-height * 6;
+	    height: $norm-height * 6;
+	    margin-left: $norm-height;
+	}
 }
+
 /***包含姓名、年龄、地址的盒子***/
 .info{
-    margin-left: 2rem;
+    margin-left: $norm-height * 2;
 }
 /***姓名、年龄***/
 .info-about {
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 0.5rem;
+    margin-bottom: $norm-height * 0.5;
+    font-size: $norm-fontsize;
+    color: $white-color;
 }
-.info-about span {
-    font-size: 1.5rem;
-    color: #fff;
+.info-about {
+	span {
+	    font-size: $norm-fontsize * 1.5;
+	    color: $white-color;
+	}
 }
 /***地址***/
 .address {
-    height: 2.3rem;
+    height: $norm-height * 2.3;
+    padding-left: $norm-height * 2;
+    color: $white-color;
+    line-height: $norm-height * 2.3;
     background: url(../../images/task12/task12-5/gps.png) no-repeat 0 50%/1rem 1.3rem;
-    color: #fff;
-    line-height: 2.3rem;
-    padding-left: 2rem;
 }
 
 
@@ -90,45 +110,56 @@ main {
 	width: 100%;
 }
 /***专业技能***/
-.main_content p {
-	font-size: 1.5rem;
-	padding-left: 1rem;
-	margin: 1rem;
-	border-left: 2px solid #5fc0cd;
-	font-weight: bold;
+.main_content {
+	p {
+		padding-left: $norm-height;
+		margin: $norm-height;
+		font: {
+			size: $norm-fontsize * 1.5;
+			weight: bold;
+		}
+		border-left: 2px solid $blue-color;
+	}
+}
+
+
+
+@mixin box-style {
+	margin: 0 $norm-height * 0.5;
+	border-bottom: 1px solid $lightgrey-color;
+	font-size: $norm-fontsize * 1.5;
 }
 
 /***住家、不含餐***/
 .box-1 {
-	height: 4rem;
-	line-height: 4rem;
-	border-top: 1px solid #e1e5e7;
-	padding-left: 2rem;
+	height: $norm-height * 4;
+	padding-left: $norm-height * 2;
+	line-height: $norm-height * 4;
+	border-top: 1px solid $lightgrey-color;
 
-	border-bottom: 1px solid #e1e5e7;
-	margin: 0 0.5rem;
-	font-size: 1.5rem;
+	@include box-style;
 }
-.box-1 img {
-	height: 1.5rem;
-    vertical-align: middle;
+.box-1 {
+	img {
+	    vertical-align: middle;
+		height: $norm-height * 1.5;
+	}
 }
+
 /***从业年限、工作时间、服务价格都是box-2***/
 .box-2 {
-	height: 4rem;
-	line-height: 4rem;
+	height: $norm-height * 4;
+	line-height: $norm-height * 4;
 
-	border-bottom: 1px solid #e1e5e7;
-	margin: 0 0.5rem;
-	font-size: 1.5rem;
+	@include box-style;
 }
 /***左边文字样式***/
 .left_text {
+	padding: 0 $norm-height;
+	margin-right: $norm-height;/*右边文字与竖线距离*/
+	font-size: $norm-fontsize * 1.5;
 	color: #999;
-	font-size: 1.5rem;
-	padding: 0 1rem;
-	margin-right: 1rem;/*右边文字与竖线距离*/
-	border-right: 1px solid #e1e5e7;
+	border-right: 1px solid $lightgrey-color;
 	flex-shrink: 0;/*让“自我介绍”不换行，呈现一排效果而不是一竖，具体上网查*/
 }
 .text_red {
@@ -136,51 +167,52 @@ main {
 }
 
 .box-3 {
-	border-bottom: 1px solid #e1e5e7;
-	margin: 0 0.5rem;
-	font-size: 1.5rem;
-
 	display: flex;
-	align-items: center;    
+	align-items: center; 
+
+	@include box-style;   
 }
 /***自我介绍右边那一长串文字***/
 .synopsis {
 	width: auto;
-	padding: 1rem 1rem 1rem 0;
+	padding: $norm-height $norm-height $norm-height 0;
 	word-break: normal;/*在恰当的断字点进行换行*/
 }
 
 /***********************************footer*************************************/
 footer {
-	width: 100%;
-	background: #fff;
 	position: fixed;
-	z-index: 100;
 	bottom: 0px;
+	z-index: 100;
 	display: flex;
 	justify-content: space-around;/*两个按钮水平均分对齐*/
+	width: 100%;
+	background: $white-color;
+}
+
+@mixin color-style {
+	color: $blue-color;
+	background: $white-color;
 }
 /***留言***/
 .message {
 	width: 45%;
-	height: 3rem;
+	height: $norm-height * 3;
 	margin: 3% 0;
-	font-size: 1.5rem;
-	border: 2px solid #5fc0cd;
+	font-size: $norm-fontsize * 1.5;
+	border: 2px solid $blue-color;
 	border-radius: 5px;
 
-	color: #5fc0cd;
-	background: #fff;
+	@include color-style;
 }
 /***联系电话***/
 .phone {
 	width: 45%;
-	height: 3rem;
+	height: $norm-height * 3;
 	margin: 3% 0;
-	font-size: 1.5rem;
-	border: 2px solid #5fc0cd;
+	font-size: $norm-fontsize * 1.5;
+	border: 2px solid $blue-color;
 	border-radius: 5px;
 
-	color: #fff;
-	background: #5fc0cd;
+	@include color-style;
 }
