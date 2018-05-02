@@ -91,8 +91,10 @@ nav {
 }
 /***中间竖线***/
 .ver_line {
-	border-left: 1px solid $lightgrey-color;
-	border-right: 1px solid $lightgrey-color;
+	border: {
+		left: 1px solid $lightgrey-color;
+		right: 1px solid $lightgrey-color;
+	}
 	box-sizing: border-box;/*中间div左右的border设置了宽度，最右边的div会因为空间不够移动到下一排（浮动），这一句代码能解决border宽度带来的div换行的麻烦*/
 }
 /***向下箭头***/
@@ -160,21 +162,11 @@ a {
 }
 
 .time_png {
-	background: {
-		image: url(../../images/task12/task12-6/time.png);
-		repeat: no-repeat;
-		position: 2% 50%;
-		size: 1.5rem;
-	}
+	background: url(../../images/task12/task12-6/time.png) no-repeat 2% 50%/1.5rem 1.5rem;
 }
 
 .gpsb_png {
-	background: {
-		image: url(../../images/task12/task12-6/gpsb.png);
-		repeat: no-repeat;
-		position: 2% 50%;
-		size: 1.5rem;
-	}
+	background: url(../../images/task12/task12-6/gpsb.png) no-repeat 2% 50%/1.5rem 1.5rem;
 }
 
 .time {
@@ -215,14 +207,6 @@ footer {
 	background-color: $lightgrey-color;
 }
 
-@mixin homeuser {
-	background: {
-		repeat: no-repeat;
-		position: 50% 0;
-		size: 2.5rem;
-		color: $lightgrey-color;
-	}
-}
 
 .home {
 	width: 20%;
@@ -230,21 +214,16 @@ footer {
 	font-size: $norm-fontsize * 1.5;
 	color: $lightblue-color;
 	border: none;
-	background-image: url(../../images/task12/task12-6/home.png);
-	@include homeuser;
+	background: url(../../images/task12/task12-6/home.png) no-repeat 50% 0/2.5rem 2.5rem;
+	background-color: $lightgrey-color;
 }
 
 .add {
 	width: 20%;
 	height: 100%;
 	border: none;
-	background: {
-		image: url(../../images/task12/task12-6/add.png);
-		repeat: no-repeat;
-		position: 50% 50%;
-		size: 3.8rem;
-		color: $lightgrey-color;
-	}
+	background: url(../../images/task12/task12-6/add.png) no-repeat 50% 50%/3.5rem 3.5rem;
+	background-color: $lightgrey-color;
 }
 
 .user {
@@ -253,8 +232,8 @@ footer {
 	font-size: $norm-fontsize * 1.5;
 	color: #999;
 	border: none;
-	background-image: url(../../images/task12/task12-6/user.png);
-	@include homeuser;
+	background: url(../../images/task12/task12-6/user.png) no-repeat 50% 0/2.5rem 2.5rem;
+	background-color: $lightgrey-color;
 }
 
 .footer_text {
