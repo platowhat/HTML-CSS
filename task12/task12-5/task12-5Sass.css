@@ -156,24 +156,24 @@ footer {
 
 /***留言***/
 .message {
+  color: #5fc0cd;
+  background: white;
   width: 45%;
   height: 3rem;
   margin: 3% 0;
   font-size: 1.5rem;
   border: 2px solid #5fc0cd;
-  border-radius: 5px;
-  color: #5fc0cd;
-  background: white; }
+  border-radius: 5px; }
 
 /***联系电话***/
 .phone {
+  color: white;
+  background: #5fc0cd;
   width: 45%;
   height: 3rem;
   margin: 3% 0;
   font-size: 1.5rem;
   border: 2px solid #5fc0cd;
-  border-radius: 5px;
-  color: #5fc0cd;
-  background: white; }
+  border-radius: 5px; }
 
 /*# sourceMappingURL=task12-5Sass.css.map */

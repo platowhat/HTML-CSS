@@ -190,29 +190,24 @@ footer {
 	background: $white-color;
 }
 
-@mixin color-style {
-	color: $blue-color;
-	background: $white-color;
+@mixin button-style {	
+	width: 45%;
+	height: $norm-height * 3;
+	margin: 3% 0;
+	font-size: $norm-fontsize * 1.5;
+	border: 2px solid $blue-color;
+	border-radius: 5px;
 }
 /***留言***/
 .message {
-	width: 45%;
-	height: $norm-height * 3;
-	margin: 3% 0;
-	font-size: $norm-fontsize * 1.5;
-	border: 2px solid $blue-color;
-	border-radius: 5px;
+	color: $blue-color;
+	background: $white-color;
 
-	@include color-style;
+	@include button-style;
 }
 /***联系电话***/
 .phone {
-	width: 45%;
-	height: $norm-height * 3;
-	margin: 3% 0;
-	font-size: $norm-fontsize * 1.5;
-	border: 2px solid $blue-color;
-	border-radius: 5px;
-
-	@include color-style;
+	color: $white-color;
+	background: $blue-color;
+	@include button-style;
 }
