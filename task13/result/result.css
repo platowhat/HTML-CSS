@@ -37,7 +37,6 @@ header {
 	text-align: center;
 }
 
-
 .rule {
 	position: absolute;
 	float: right;
@@ -73,12 +72,9 @@ main {
 	color: #fff;
 }
 
-
 .main_info pre p {
 	margin: .5rem 0;
 }
-
-
 
 .gameing {
 	border-bottom: 1px solid #f0f0f0;

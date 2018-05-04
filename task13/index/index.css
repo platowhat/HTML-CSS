@@ -28,19 +28,24 @@ header {
 	height: 100%;
 	margin-right: 1rem;
 }
+
 .menu {	
 	float: left;
 	background: url(../../images/task13/home/menu.png) no-repeat 50% 50%/2rem 2rem;
 }
+
 .site {	
 	background: url(../../images/task13/home/site.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
+
 .volume {	
 	background: url(../../images/task13/home/volume.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
+
 .help {	
 	background: url(../../images/task13/home/help.png) no-repeat 50% 50%/2rem 2rem;	 	
 }
+
 .rule {	
 	background: url(../../images/task13/home/rule.png) no-repeat 50% 50%/2rem 2rem;	
 }

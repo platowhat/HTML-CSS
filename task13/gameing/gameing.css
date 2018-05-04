@@ -100,6 +100,7 @@ main {
 	padding-bottom: 6rem;
 	background-color: #34bede;
 }
+
 .main_vote {
 	width: 96%;
 	margin: 0 2%;
@@ -110,9 +111,11 @@ main {
 	width: 33.3%;
 	height: 33.3vw;
 }
+
 .gamer:hover .game_select {
 	visibility: visible;
 }
+
 .game_name {
 	display: inline-block;
 	width: 70%;
@@ -125,6 +128,7 @@ main {
 	text-align: center;
 	background-color: #f3c881;
 }
+
 .game_id {
 	display: inline-block;
 	width: 70%;
@@ -157,6 +161,7 @@ main {
     background: url(../../images/task13/gameing/kill.png) no-repeat 0 0/100% 100%;
 
 }
+
 .find {
 	display: inline-block;
 	width: 20%;
@@ -164,6 +169,7 @@ main {
     border: none;
     background: url(../../images/task13/gameing/find.png) no-repeat 0 33.3%/100% 100%;
 }
+
 .load {
 	display: inline-block;
 	width: 20%;
@@ -171,6 +177,7 @@ main {
     border: none;
     background: url(../../images/task13/gameing/load.png) no-repeat 0 66.6%/100% 100%;
 }
+
 .save {
 	display: inline-block;
 	width: 20%;
