@@ -1,25 +1,4 @@
-html {
-	font-size: 62.5%;
-}
-
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
-body {
-	background-color: #f0f0f0; 
-}
-
 /*********************************header*****************************************/
-header {
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-	height: 4rem;
-	background-color: #34bede;
-}
-
 .header_all {
 	float: right;
 	display: inline-block; /*当div里面没有内容时，尽管设置了width和height，但是添加的背景图片还是不会显示，

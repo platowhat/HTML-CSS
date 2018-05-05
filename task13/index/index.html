@@ -4,15 +4,17 @@
 	<meta charset="UTF-8">
 	<title>task13-index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<header>
-		<a href="#" class="menu header_all"></a>
+		<!-- <a href="#" class="menu header_all"></a>
 		<a href="#" class="site header_all"></a>
 		<a href="#" class="volume header_all"></a>
 		<a href="#" class="help header_all"></a>
-		<a href="#" class="rule header_all"></a>
+		<a href="#" class="rule header_all"></a> -->
+		<button class="left" id="menu"></button>
 	</header>
 
 	<main>
@@ -42,5 +44,17 @@
 				<i class="wait"></i>
 			</div>
 	</main>
+
+	<div class="side-menu" id="side-menu">
+		<ul>
+			<li>公告</li>
+			<li>设置</li>
+			<li>帮助</li>
+			<li>关于</li>
+		</ul>
+	</div>
+	<script>
+		var easy=document.getElementById("easy"),header=document.getElementsByTagName("header"),bmain=document.getElementsByTagName("main"),side=document.getElementById("side-menu"),menu=document.getElementById("menu");easy.onclick=function(){window.location.href="vote.html"},menu.onclick=function(){side.style.left?(side.style.left="",header[0].className="",bmain[0].className=""):(side.style.left=0,header[0].className="go-right",bmain[0].className="go-right")};var np=document.getElementById("next-page"),hh=document.getElementsByTagName("header")[0].offsetHeight,nh=np.offsetHeight;window.onscroll=function(){var e=document.documentElement.scrollTop,t=document.documentElement.clientHeight,n=(document.documentElement.clientWidth,document.body.offsetHeight);np.className=e>=n/2-t/2+hh/2+nh/2?"next-page cla2 btn":"next-page cla1 btn"};
+	</script>
 </body>
 </html>
