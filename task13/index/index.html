@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<header>
-		<button class="left" id="menu"></button>
+	<header id="header_right">
+		<input type="button" class="left_button" id="menu" onclick="javascript:button_onclick();">
 	</header>
 
-	<div class="side-menu" id="side-menu">
+	<div class="side-menu" id="menu-right">
 		<ul>
 			<li class="menu-box1">公告</li>
 			<li class="menu-box2">设置</li>
@@ -22,7 +22,7 @@
 		</ul>
 	</div>
 
-	<main>
+	<main id="main_right">
 		<div class="main_top">
 			上次游戏：捉鬼猜词版
 			<a href="#" class="toright1"></a>
@@ -50,8 +50,46 @@
 			</div>
 	</main>
 
-<!-- 	<script>
-		var easy=document.getElementById("easy"),header=document.getElementsByTagName("header"),bmain=document.getElementsByTagName("main"),side=document.getElementById("side-menu"),menu=document.getElementById("menu");easy.onclick=function(){window.location.href="vote.html"},menu.onclick=function(){side.style.left?(side.style.left="",header[0].className="",bmain[0].className=""):(side.style.left=0,header[0].className="go-right",bmain[0].className="go-right")};var np=document.getElementById("next-page"),hh=document.getElementsByTagName("header")[0].offsetHeight,nh=np.offsetHeight;window.onscroll=function(){var e=document.documentElement.scrollTop,t=document.documentElement.clientHeight,n=(document.documentElement.clientWidth,document.body.offsetHeight);np.className=e>=n/2-t/2+hh/2+nh/2?"next-page cla2 btn":"next-page cla1 btn"};
-	</script> -->
+	<script>
+		// function button_onclick() {
+		// 	var i = 2;
+		// 	if (i % 2 == 0) {
+		// 		var header = document.getElementById('header_right').className="go-right";
+		// 		var	main = document.getElementById('main_right').className="go-right";
+		// 		var	div = document.getElementById('menu-right').className="right";
+		// 		i++;
+		// 	}else {
+		// 		var header = document.getElementById('header_right').style.left="0%";
+		// 		var main = document.getElementById('main_right').style.left="0%";
+		// 		var	div = document.getElementById('menu-right').className="side-menu";
+		// 		i++;
+		// 	}
+			
+		// }
+
+
+		var easy=document.getElementById("easy"),
+			header=document.getElementsByTagName("header"),
+			bmain=document.getElementsByTagName("main"),
+			side=document.getElementById("side-menu"),
+			menu=document.getElementById("menu");
+		easy.onclick=function() {
+			window.location.href="vote.html"
+		},
+		menu.onclick=function() {
+			side.style.left_button?(side.style.left_button="",header[0].className="",bmain[0].className=""):(side.style.left_button=0,header[0].className="go-right",bmain[0].className="go-right")
+		};
+		var np=document.getElementById("next-page"),
+			hh=document.getElementsByTagName("header")[0].offsetHeight,
+			nh=np.offsetHeight;
+		window.onscroll=function() {
+			var e=document.documentElement.scrollTop,
+				t=document.documentElement.clientHeight,
+				n=(document.documentElement.clientWidth,document.body.offsetHeight);
+				np.className=e>=n/2-t/2+hh/2+nh/2?"next-page cla2 btn":"next-page cla1 btn"
+		};
+
+		
+	</script>
 </body>
-</html>
+</html>  

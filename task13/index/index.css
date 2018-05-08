@@ -10,7 +10,7 @@ header {
 	width: 100%;
 }
 
-.left {
+.left_button {
 	width: 2rem;
 	height: 2rem;
 	margin-left: 1rem;
@@ -19,15 +19,30 @@ header {
 	background: url(../../images/task13/home/menu.png) no-repeat 50% 50%/2rem 2rem;
 }
 
+.right {
+	left: 0%;
+	width: 70%;
+	height: 100vh;
+	background: #fff;
+}
+
 .side-menu {
 	position: fixed;
 	top: 0;
 	z-index: 200;
 	bottom: 0;
-	/*left:-70%;*/
+	left:-70%;
 	width: 70%;
 	background: #fff;
 }
+
+.menu-box1,
+.menu-box2,
+.menu-box3,
+.menu-box4 {
+	border-bottom: 1px solid #ddd;
+}
+
 .side-menu li {
 	position: relative;
 	box-sizing: border-box;
@@ -37,13 +52,17 @@ header {
 	border-bottom: 1px solid #ddd;
 	cursor: pointer;
 }
-.side-menu li:after {
+.menu-box1:after,
+.menu-box2:after,
+.menu-box3:after,
+.menu-box4:after {
 	content: '';
-	position: absolute;
+	position: relative;
+	left: 55%;
 	top: 1rem;
-	right: 1rem;
 	width: 1rem;
 	height: 2rem;
+	display: inline-block;
 	background: url(../../images/task13/home/toright1.png) center/cover;
 }
 .menu-box1:before {
