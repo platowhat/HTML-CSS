@@ -4,11 +4,11 @@ header {
 	align-items: center;
 }
 /*header、main点击后向右移动*/
-.go-right {
+/*.go-right {
 	position: fixed;
 	left: 70%;
 	width: 100%;
-}
+}*/
 /*三横杠*/
 .left_button {
 	width: 2rem;
@@ -210,4 +210,42 @@ main {
 
 .wait1 {
 	background-color: #34bede;
+}
+
+
+
+
+label {
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 300;
+  position: fixed;
+  padding: .5rem;
+}
+/*按钮三横杠*/
+.bar {
+  display: block;
+  background-color: #fff;
+  width: 2rem;
+  height: 3px;
+  border-radius: 5px;
+  margin: .5rem auto;
+  /*transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;*/
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .go-right {
+  transform: translateX(70%);
+}
+
+input[type="checkbox"]:checked ~ aside {
+  transform: translateX(100%);
+}
+
+input[type="checkbox"]:checked ~ label {
+  position: absolute;
+  left: 70%;
 }
