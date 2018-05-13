@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+$norm-length: 1rem;
+$norm-fontsize: 1rem;
+$norm-percentage: $norm-percentage;
+$white-color: white;
+$blue-background: #6dd2e9;
+
+.tohome {
+	position: absolute;
+	float: left;
+	display: inline-block;
+	width: $norm-percentage;
+	height: $norm-percentage * 10;
+	background: url(../../images/task13/result/tohome.png) no-repeat $norm-percentage * 10 $norm-percentage * 10/$norm-length * 2 $norm-length * 2;
+}
+
+.gameover {
+	float: left;
+	width: $norm-percentage * 8;
+	height: $norm-length * 2;
+	margin-top: $norm-length;
+	margin-left: $norm-percentage;
+	color: $white-color;
+	line-height: $norm-percentage * 10;
+	text-align: center;
+}
+
+.rule {
+	position: absolute;
+	float: right;
+	display: inline-block;
+	width: $norm-percentage;
+	height: $norm-percentage * 10;
+	background: url(../../images/task13/result/rule.png) no-repeat $norm-percentage * 10 $norm-percentage * 10/$norm-length * 2 $norm-length * 2;
+}
+/*********************************main*****************************************/
+main {
+	width: $norm-percentage * 10;
+	margin: $norm-length * 4 0 $norm-length * 6 0;
+	background-color: #29bde0;
+}
+
+.main_win {
+	width: $norm-percentage * 10;
+	height: $norm-length * 11;
+	background: url(../../images/task13/result/win.png) no-repeat $norm-percentage * 10 $norm-percentage * 10/$norm-length * 14 $norm-length * 8;
+}
+
+.main_good {
+	width: $norm-percentage * 8;
+	margin: 0 $norm-percentage;
+	font-size: $norm-fontsize * 1.8;
+	color: #ffc865;
+}
+
+.main_info {
+	width: $norm-percentage * 10;
+	margin: 5% $norm-percentage 0 $norm-percentage;
+	font-size: $norm-fontsize * 1.7;
+	color: $white-color;
+}
+
+.main_info pre p {
+	margin: $norm-length * 0.5 0;
+}
+
+.gameing {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: $white-color; 
+}
+
+.gameing p {
+	overflow: hidden;
+}
+
+.time {
+	float: right;
+	margin: $norm-length * 0.5 $norm-percentage $norm-length * 0.5 0;
+	color: #e9eaea;
+}
+
+.day {
+	float: left;
+	margin: $norm-length * 0.5 0 $norm-length * 0.5 $norm-percentage;
+	font-size: $norm-fontsize * 1.6;
+}
+
+.date {
+	margin: 0 0 $norm-length * 0.5 $norm-percentage;
+	color: #c0c0c2;
+}
+/*********************************footer*****************************************/
+footer {
+	position: fixed;
+	bottom: 0px;
+	z-index: 100;
+	width: $norm-percentage * 10;
+	background-color: rgba(41, 189, 224, 0.5);
+}
+
+.again {
+	float: left;
+	width: $norm-percentage * 4;
+	height: $norm-length * 3;
+	margin: $norm-percentage * 0.4 $norm-percentage * 0.4 $norm-percentage * 0.4 $norm-percentage * 0.6;
+	border: 2px solid #f66f6f;
+	border-radius: 5px;
+	font-size: $norm-fontsize * 1.5;
+	color: $white-color;
+	background: #f66f6f;
+}
+
+.up_share {
+	float: left;
+	width: $norm-percentage * 4;
+	height: $norm-length * 3;
+	margin:  $norm-percentage * 0.4 $norm-percentage * 0.6 $norm-percentage * 0.4 $norm-percentage * 0.4;
+	border: 2px solid #fbb435;
+	border-radius: 5px;
+	font-size: $norm-fontsize * 1.5;
+	color: $white-color;
+	background: #fbb435;
+}

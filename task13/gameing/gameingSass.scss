@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+$norm-length: 1rem;
+$norm-fontsize: 1rem;
+$norm-percentage: 10%;
+$white-color: white;
+$blue-color: #34bede;
+$lightblue-color: #bae9f4;
+
+header {
+	height: $norm-length * 10;
+}
+
+.toresult {
+	position: absolute;
+	float: left;
+	display: inline-block;
+	width: $norm-percentage;
+	height: $norm-length * 4;
+	background: url(../../images/task13/gameing/toresult.png) no-repeat $norm-percentage * 5 $norm-percentage * 5/$norm-length * 2 $norm-length * 2;
+}
+
+.vote {
+	float: left;
+	width: $norm-percentage * 8;
+	height: $norm-length * 2;
+	margin: {
+		top: $norm-length;
+		left: $norm-percentage;
+	}
+	color: $white-color;
+	line-height: $norm-percentage * 10;
+	text-align: center;
+}
+
+
+.cancel {
+	position: absolute;
+	float: right;
+	display: inline-block;
+	width: $norm-percentage;
+	height: $norm-length * 4;
+	background: url(../../images/task13/gameing/cancel.png) no-repeat $norm-percentage * 5 $norm-percentage * 5/$norm-length * 2 $norm-length * 2;
+}
+
+.audio {
+	position: absolute;
+	top: $norm-length * 4;
+	width: $norm-percentage * 10;
+	height: $norm-length * 3;
+	font-size: $norm-fontsize * 1.5;	
+	line-height: $norm-length * 3;
+	background-color: $lightblue-color;
+}
+
+.audio span {
+	width: $norm-percentage * 5;
+	padding-left: $norm-length * 2;
+}
+
+.switch {
+	float: right;
+	width: $norm-length * 2;
+	height: $norm-length * 2;
+	margin: $norm-length * 0.5 $norm-length * 0.5 $norm-length * 0.5 0;
+	background: url(../../images/task13/gameing/switch.png) no-repeat $norm-percentage * 5 $norm-percentage * 5/$norm-length * 2 $norm-length * 2;
+}
+
+.triangle_down {
+	position: absolute;
+	top: $norm-length * 7;
+	left: $norm-length;
+    width: 0px;
+    height: 0px;
+    border: {
+    	top: $norm-length solid $lightblue-color;
+    	left: $norm-length * 0.5 solid transparent;
+		right: $norm-length * 0.5 solid transparent;
+    }
+}
+
+.start {
+	position: absolute;
+	left: $norm-length * 1.5;
+	bottom: $norm-length * 0.5;
+	width: $norm-percentage * 10;
+	color: $white-color;
+}
+
+/*********************************main*****************************************/
+main {
+	position: relative;
+	top: $norm-length * 10;
+	overflow: hidden;
+	width: $norm-percentage * 10;
+	height: $norm-percentage * 10;
+	padding-bottom: $norm-length * 6;
+	background-color: $blue-color;
+}
+
+.main_vote {
+	width: $norm-percentage * 9.6;
+	margin: 0 $norm-percentage * 0.2;
+}
+
+.gamer {
+	float: left;
+	width: 33.3%;
+	height: 33.3vw;
+}
+
+.gamer:hover .game_select {
+	visibility: visible;
+}
+
+.game_name {
+	display: inline-block;
+	width: $norm-percentage * 7;
+	height: 16vw;
+	margin: $norm-percentage $norm-percentage * 1.5 0 $norm-percentage * 1.5;
+	border: {
+		top: 2px solid $white-color;
+		right: 2px solid $white-color;
+		left: 2px solid $white-color;
+	}
+	line-height: 16vw;
+	text-align: center;
+	background-color: #f3c881;
+}
+
+.game_id {
+	display: inline-block;
+	width: $norm-percentage * 7;
+	height: $norm-percentage * 2;
+	margin: 0 $norm-percentage * 1.5 0 $norm-percentage * 1.5;
+	border: {
+		right: 2px solid $white-color;
+		bottom: 2px solid $white-color;
+		left: 2px solid $white-color;
+	}
+	color: $white-color;
+	line-height: $norm-length * 2;
+	text-align: center;
+	background-color: #82af9b;
+}
+
+.game_select {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: $norm-percentage * 7.2;
+	height: $norm-percentage * 2.5;
+	margin: 0 $norm-percentage * 1.5 0 $norm-percentage * 1.5;
+	visibility: hidden;
+}
+
+@mixin game-select {
+	display: inline-block;
+	width: $norm-percentage * 2;
+	height: $norm-percentage * 6;
+    border: none;
+}
+
+.kill {
+	@include game-select;
+    background: url(../../images/task13/gameing/kill.png) no-repeat 0 0/$norm-percentage * 10 $norm-percentage * 10;
+
+}
+
+.find {
+	@include game-select;
+    background: url(../../images/task13/gameing/find.png) no-repeat 0 33.3%/$norm-percentage * 10 $norm-percentage * 10;
+}
+
+.load {
+	@include game-select;
+    background: url(../../images/task13/gameing/load.png) no-repeat 0 66.6%/$norm-percentage * 10 $norm-percentage * 10;
+}
+
+.save {
+	@include game-select;
+    background: url(../../images/task13/gameing/save.png) no-repeat 0 $norm-percentage * 10/$norm-percentage * 10 $norm-percentage * 10;
+
+}
+
+/*********************************footer*****************************************/
+footer {
+	position: fixed;
+	bottom: 0px;
+	z-index: 100;
+	width: $norm-percentage * 10;
+	height: $norm-length * 6;
+	background-color: $blue-color;
+}
+
+footer button {
+	width: $norm-percentage * 6;
+	height: $norm-length * 4;
+	margin: $norm-length $norm-percentage * 2;
+	border: none;
+	font-size: $norm-fontsize * 2;
+	color: $white-color;
+	background: #fbb435;
+}
