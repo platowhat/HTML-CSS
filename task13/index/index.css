@@ -1,30 +1,39 @@
-/*********************************header*****************************************/
-header {
-	display: flex;
-	align-items: center;
+/*设置顶部按钮*/
+label {
+  position: fixed;
+  display: inline-block;
+  z-index: 300;
+  padding: .5rem;
+  background-color: transparent;
 }
-/*header、main点击后向右移动*/
-/*.go-right {
-	position: fixed;
-	left: 70%;
-	width: 100%;
-}*/
-/*三横杠*/
-.left_button {
-	width: 2rem;
-	height: 2rem;
-	margin-left: 1rem;
-	border: none;
-	outline: none;
-	background: url(../../images/task13/home/menu.png) no-repeat 50% 50%/2rem 2rem;
+/*按钮三横杠*/
+.bar {
+  display: block;
+  width: 2rem;
+  height: 3px;
+  margin: .5rem auto;
+  border-radius: 5px;
+  background-color: #fff;
 }
-/*隐藏的菜单向右显示*/
-.right {
-	width: 70%;
-	height: 100vh;
-	background: #fff;
+/*隐藏CheckBox默认的样式*/
+input[type="checkbox"] {
+  display: none;
 }
-/*右边菜单*/
+/*点击按钮后，让类名为go-right的header和main右移70%*/
+input[type="checkbox"]:checked ~ .go-right {
+  transform: translateX(70%);
+}
+/*点击按钮后，让左边隐藏起的菜单栏右移显示出来*/
+input[type="checkbox"]:checked ~ aside {
+  transform: translateX(100%);
+}
+/*点击按钮后，三横杠的按钮也右移70%*/
+input[type="checkbox"]:checked ~ label {
+  position: absolute;
+  left: 70%;
+}
+
+/*左边菜单，aside类名*/
 .side-menu {
 	position: fixed;
 	top: 0;
@@ -34,16 +43,9 @@ header {
 	width: 70%;
 	background: #fff;
 }
-/*右边菜单每个li显示一个下边框*/
-.menu-box1,
-.menu-box2,
-.menu-box3,
-.menu-box4 {
-	border-bottom: 1px solid #ddd;
-}
 
 /*右边菜单每个li*/
-.side-menu li {
+.side-menu ul li {
 	position: relative;
 	box-sizing: border-box;
 	font-size: 1.5rem;
@@ -53,10 +55,7 @@ header {
 
 }
 /*每个li右边的向右的箭头*/
-.menu-box1:after,
-.menu-box2:after,
-.menu-box3:after,
-.menu-box4:after {
+.side-menu ul li:after {
 	content: '';
 	position: relative;
 	top: 1rem;
@@ -66,7 +65,7 @@ header {
 	display: inline-block;
 	background: url(../../images/task13/home/toright1.png) center/cover;
 }
-/*第一行li前面的图片*/
+/*第一行li，公告前面的图片*/
 .menu-box1:before {
 	content: '';
 	display: inline-block;
@@ -76,7 +75,7 @@ header {
 	margin: 1rem;
 	background: url(../../images/task13/home/volume.png) no-repeat 50% 50%/100% 100%;
 }
-/*第二行li前面的图片*/
+/*第二行li，设置前面的图片*/
 .menu-box2:before {
 	content: '';
 	display: inline-block;
@@ -86,7 +85,7 @@ header {
 	margin: 1rem;
 	background: url(../../images/task13/home/site.png) no-repeat 50% 50%/100% 100%;
 }
-/*第三行li前面的图片*/
+/*第三行li，帮助前面的图片*/
 .menu-box3:before {
 	content: '';
 	display: inline-block;
@@ -96,7 +95,7 @@ header {
 	margin: 1rem;
 	background: url(../../images/task13/home/help.png) no-repeat 50% 50%/100% 100%;
 }
-/*第四行li前面的图片*/
+/*第四行li，关于前面的图片*/
 .menu-box4:before {
 	content: '';
 	display: inline-block;
@@ -215,37 +214,3 @@ main {
 
 
 
-label {
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 300;
-  position: fixed;
-  padding: .5rem;
-}
-/*按钮三横杠*/
-.bar {
-  display: block;
-  background-color: #fff;
-  width: 2rem;
-  height: 3px;
-  border-radius: 5px;
-  margin: .5rem auto;
-  /*transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;*/
-}
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked ~ .go-right {
-  transform: translateX(70%);
-}
-
-input[type="checkbox"]:checked ~ aside {
-  transform: translateX(100%);
-}
-
-input[type="checkbox"]:checked ~ label {
-  position: absolute;
-  left: 70%;
-}
