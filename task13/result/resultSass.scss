@@ -4,7 +4,6 @@ $norm-length: 1rem;
 $norm-fontsize: 1rem;
 $norm-percentage: $norm-percentage;
 $white-color: white;
-$blue-background: #6dd2e9;
 
 .tohome {
 	position: absolute;
@@ -19,8 +18,10 @@ $blue-background: #6dd2e9;
 	float: left;
 	width: $norm-percentage * 8;
 	height: $norm-length * 2;
-	margin-top: $norm-length;
-	margin-left: $norm-percentage;
+	margin: {
+		top: $norm-length;
+		left: $norm-percentage;
+	}
 	color: $white-color;
 	line-height: $norm-percentage * 10;
 	text-align: center;
