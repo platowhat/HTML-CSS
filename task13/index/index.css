@@ -179,9 +179,9 @@ main {
 }
 
 .toright2 {
-	position: fixed;
-    top: 60%;
-    right: 6%;
+	position: absolute;
+    top: 50%;
+    right: 8%;
     width: 0;
     height: 0;
     border-left: 1.5rem solid #fbb435;
