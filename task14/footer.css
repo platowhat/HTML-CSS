@@ -1,0 +1,45 @@
+/********************************footer********************************/
+footer {
+    width: 100%;
+    background-color: #29b078;
+    margin-top: 2rem;
+}
+/***每个盒子***/
+.footer-details {
+    padding: 30px;
+    color: #fff;
+}
+/***标题***/
+.footer-title {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+/***超链接***/
+footer a {
+    margin: 10px 10px 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.our-webs {
+    margin-top: 10px;
+}
+/***最下方***/
+.copyright {
+    border-top: 1px solid #32c086;
+    width: 100%;
+    background-color: #29b078;
+}
+.copyright-details {
+    padding: 5px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}

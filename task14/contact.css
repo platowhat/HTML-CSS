@@ -1,0 +1,39 @@
+/*********顶部联系方式**********/
+.header_top {
+	height: 40px;
+}
+
+.header_top span {
+	display: inline-block;
+	height: 40px;
+	margin: 0 0 0 5%;
+	font-size: 1.5rem;
+	color: #29b078;
+	line-height: 40px;
+}
+.all_contact {
+	float: right;
+	width: 30%;
+	height: 100%;
+	margin-right: 5%;
+}
+
+.contact {
+	display: inline-block;
+	float: right;
+	width: 40px;
+	height: 100%;
+	padding: 0 30px;
+}
+
+.weixin {
+	background: url(../images/task14/weixin.png) no-repeat 50% 50%/35px 35px;
+}
+
+.QQ {
+	background: url(../images/task14/QQ.png) no-repeat 50% 50%/35px 35px;
+}
+
+.weibo {
+	background: url(../images/task14/weibo.png) no-repeat 50% 50%/35px 35px;
+}
