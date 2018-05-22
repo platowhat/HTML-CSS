@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task15_index</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="../kivet_commom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+
+<body>
+	<header>
+		<div class="w100per hau ovh">
+			<div class="header_top_box">
+				<a href="#" class="login">登录</a>
+				<div class="shuxian disib w2px h15px"></div>
+				<a href="#" class="registered">注册</a>
+			</div>	
+		</div>
+		
+
+
+		<!-- 页面宽度较小时，通过按钮控制菜单出现/技能树 -->
+		<div class="menu_box1">	
+			<!-- 右方按钮 -->
+			<input type="checkbox" id="myInput">
+			<label for="myInput">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</label>
+			<!-- 技能树图片 -->
+			<a href="index.html" class="jinengshu"></a>
+			<!-- 点击按钮出现的下拉菜单 -->
+			<div class="drop_down_menu go-show">
+				<ul class="drop_down_menu_ul">
+					<li><a href="index.html" class="drop_down_menu_text">首页</a></li>
+					<li><a href="../career/career.html" class="drop_down_menu_text">职业</a></li>
+					<li><a href="../companion/companion.html" class="drop_down_menu_text">推荐</a></li>
+					<li><a href="#" class="drop_down_menu_text">关于</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 页面宽度较宽时，直接显示菜单 -->
+		<div class="menu_box2">
+			<div class="header_down">
+				<a href="index.html" class="jinengshu"></a>
+				<div class="menu">
+					<a href="index.html">首页</a>
+					<a href="../career/career.html">职业</a>
+					<a href="../companion/companion.html">推荐</a>
+					<a href="#">关于</a>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="go-show" style="width: 100%; height: 5rem; background-color: red;"></main>
+
+	<footer>
+		
+	</footer>
+
+
+</body>
+</html>

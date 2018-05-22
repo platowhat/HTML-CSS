@@ -1,0 +1,32 @@
+/************高效、规范一排************/
+.main_box {
+	width: 80%;
+	margin: 7% 10% 0 10%;
+}
+
+.row div {
+	text-align: center;
+} 
+/***最右边一个***/
+.usernum {
+	display: inline-block;
+	color: #29b078;
+	line-height: 100%;
+	background: url(../../../images/task15/index/usernum.png) no-repeat 0 50%/30% 100%;
+}
+
+.line_left {
+	padding: 30px 0;
+	border-left: 1px dashed #999;
+}
+/***文字***/
+.main_top_box p {
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	color: #999;
+}
+/***图片***/
+.main_top_box img {
+	width: 5.2rem;
+	height: 5.4rem;
+}

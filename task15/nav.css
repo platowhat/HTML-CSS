@@ -1,0 +1,128 @@
+/*********技能树、导航菜单**********/
+/***技能树图片***/
+.jinengshu {
+	display: inline-block;
+	width: 6rem;
+	height: 3rem;
+	margin-left: 3%;
+	margin-top: 2rem;
+	background: url(../images/task15/jinengshu.png) no-repeat 50% 50%/100% 100%;
+
+}
+/***导航菜单***/
+/*页面较小时，通过按钮控制下拉菜单*/
+@media screen and (max-width: 1079px) {
+	.menu_box2 {
+		display: none;
+	}
+	.menu_box1 {
+		width: 100%;
+		background-color: #29b078;
+	}
+	/*设置顶部按钮*/
+	label {
+		display: inline-block;
+		z-index: 200;
+		float: right;
+		margin-top: 2rem;
+		margin-right: 5%;
+		padding: .5rem;
+		background-color: transparent;
+	}
+	/*按钮三横杠*/
+	.bar {
+		display: block;
+		width: 1.5rem;
+		height: 2px;
+		z-index: 200;
+		margin: 4px auto;
+		border-radius: 5px;
+		background-color: #666;
+	}
+
+
+	/*点击按钮之后出现的菜单*/
+	.drop_down_menu {
+		display: none;
+		width: 100%;
+		height: auto;
+		background-color: #29b078;
+	}
+
+	.drop_down_menu_ul {
+		flex-direction: column;/*一格一排排列，自上而下*/
+		list-style: none;
+		margin: 0;
+		background-color: #29b078;
+	}
+
+	.drop_down_menu_ul li {
+		width: 100%;
+		padding: 1rem 0;
+		text-align: center;
+	}
+
+	.drop_down_menu_text {
+		font-size: 1.5rem;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.drop_down_menu ul li:hover {
+		border-radius: 3px;
+		background-color: #36c388;
+	}
+
+	.drop_down_menu_text:hover {
+		text-decoration: none;
+	}
+
+	/*隐藏CheckBox默认的样式*/
+	input[type="checkbox"] {
+	    display: none;
+	}
+	/*点击按钮后，让类名为go-show的盒子向下显示*/
+	input[type="checkbox"]:checked ~ .go-show {
+	    display: block;
+	}
+}
+
+@media screen and (min-width: 1079px) {
+	.menu_box1, .drop_down_menu {
+		display: none;
+	}
+
+	#myInput {
+		display: none;
+	}
+
+	.menu_box2 {
+		width: 100%;
+		background-color: #29b078;
+	}
+	
+	.menu {
+		display:flex;
+		flex-direction:row;
+		float: right;
+		height: auto;
+		width: 30%;
+		margin-right: 10%;
+	}
+
+	.menu a {
+		display: inline-block;
+		border: none;
+		font-size: 1vw;
+		color: #fff;
+		line-height: 5rem;
+		text-align: center;
+		text-decoration: none;
+		flex: 1;
+	}
+
+	.menu a:hover {
+		border-bottom: 4px solid #fff;
+		text-decoration: none;
+	}
+}

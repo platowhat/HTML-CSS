@@ -1,0 +1,22 @@
+/*********导航**********/
+.index_text {
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+.index_text:hover {
+	text-decoration: none;
+}
+
+.companion_text {
+	font-size: 1rem;
+	color: #29b078;
+	text-decoration: none;
+}
+.companion_text:hover {
+	text-decoration: none;
+}
+
+.daohang_text {
+	margin: 2rem 0;
+}

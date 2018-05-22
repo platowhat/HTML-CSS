@@ -1,0 +1,39 @@
+@import "../contact.css";
+@import "../nav.css";
+@import "./modules/textnav.css";
+@import "./modules/direction.css";
+@import "./modules/mainbox.css";
+@import "./modules/boxhover.css";
+@import "../footer.css";
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+
+
+/********************************main********************************/
+main {
+	width: 100%;
+	background-color: #fafafa;
+}
+
+
+
+
+
+

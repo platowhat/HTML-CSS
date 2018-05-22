@@ -1,0 +1,7 @@
+/*********快人一步**********/
+.main_top_img {
+	display: inline-block;
+	width: 100vw;
+	height: 13vw;
+	background: url(../../../images/task15/companion/main_top_img.png) no-repeat 0 0/100% 100%;
+}

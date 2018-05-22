@@ -1,0 +1,24 @@
+/************友情链接一栏************/
+/***整栏***/
+.links {
+    width: 100%;
+    margin-top: 70px;
+    background-color: #fff;
+}
+/*文字*/
+.link_text {
+	white-space: nowrap;
+}
+/*超链接*/
+.link_text a {
+	width: 77px;
+	color: #999;
+}
+
+.link_text a:hover {
+	color: black;
+}
+
+.link_text a span {
+	float: left;
+}

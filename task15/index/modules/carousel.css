@@ -1,0 +1,63 @@
+/************轮播图*************/
+.item img{
+	width:100%;
+}
+#carousel-example-generic{
+	width:100%;
+	margin:0 auto;
+}
+
+.carousel-caption {
+	margin: 0 -5%;
+}
+/***向左***/
+.toleft {
+	position: absolute;
+	top: 30%;
+	left: 70%;
+	display: inline-block;
+	width: 20%;
+	height: 30%;
+	background: url(../../../images/task15/index/toleft.png) no-repeat 50% 50%/6vw 7vw;
+}
+/***向右***/
+.toright {
+	position: absolute;
+	top: 30%;
+	right: 70%;
+	display: inline-block;
+	width: 20%;
+	height: 30%;
+	background: url(../../../images/task15/index/toright.png) no-repeat 50% 50%/6vw 7vw;
+}
+/***向左、向右定位***/
+.carousel-caption {
+	position: relative;
+	top: 25%;
+	overflow: hidden;
+	width: 70%;
+}
+/*********轮播图文字**********/
+.text1 {
+	display: inline-block;
+	float: right;
+	width: auto;
+	margin: 0;
+	font-size: 2vw;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.text2 {
+	display: inline-block;
+	float: left;
+	width: 80%;
+	margin-left: 5%; 
+	font-size: 2.5vw;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.text2 span {
+	font-size: 4.5vw;
+	font-weight: bold;
+}

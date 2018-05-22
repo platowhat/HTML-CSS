@@ -1,0 +1,37 @@
+/*********登录、注册**********/
+/*包含三个盒子*/
+.header_top_box {
+	display: flex;
+	align-items: center;
+	margin: 8px 5%;
+	float: right;
+}
+
+.login {
+	padding-right: 4px;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+}
+
+.login:hover {
+	text-decoration: none;
+}
+
+.shuxian {
+	display: inline-block;
+	width: 2px;
+	height: 15px;
+	background-color: #29b078;
+}
+
+.registered {
+	padding-left: 4px;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+}
+
+.registered:hover {
+	text-decoration: none;
+}

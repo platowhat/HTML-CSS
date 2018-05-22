@@ -1,0 +1,26 @@
+/*********鼠标移上后**********/
+.hover_title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hover_text {
+    padding: 30px 10% 0 10%;
+    font-size: 1.5rem;
+}
+
+.hover_style{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 92.5%;
+    height: 100%;
+    padding: 50px 32px 0 32px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(61,61,61,.7);
+}
+
+.main_boxs:hover .hover_style{
+    opacity: 1;
+}
