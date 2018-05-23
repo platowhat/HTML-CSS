@@ -2,7 +2,6 @@
 footer {
     width: 100%;
     background-color: #29b078;
-    margin-top: 2rem;
 }
 /***每个盒子***/
 .footer-details {
@@ -42,4 +41,27 @@ footer a:hover {
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
+}
+
+/*150%（899px）以上，三个盒子在一排*/
+@media screen and (min-width: 899px) {
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+
+    .footer-details {
+        width: 33%;
+        float: left;
+        padding: 0;
+        margin: 2rem 0;
+    }
+}
+
+/*150%（899px）以下，三个盒子各一排*/
+@media screen and (max-width: 899px) {
+    .footer-details {
+        text-align: center;
+    }
 }

@@ -276,6 +276,23 @@
 .m9per {margin: 9%;}
 .m10per {margin: 10%;}
 
+/********************* margin-top*/
+
+
+/********************* margin-right*/
+.mr5per {
+	margin-right: 5%;
+}
+
+/********************* margin-bottom*/
+
+
+/********************* margin-left*/
+.ml5per {
+	margin-left: 5%;
+}
+
+
 /************************************* 其它一些负值 */
 /********************* margin-top*/
 .mt-1px {margin-top: -1px;}
