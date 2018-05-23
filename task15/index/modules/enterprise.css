@@ -4,12 +4,12 @@
 }
 
 .img-box {
-	width: 100%;
+	width: 100vw;
 }
 
 .img-box img {
 	float: left;
-	width: 100%;
+	width: 17vw;
 	padding: 1rem 1px;
 }
 
@@ -19,23 +19,7 @@
     .yipai {
     	width: 100%;
     }
+    .img-box img {
+		width: 90%;
+	}
 }
-
-/***包含五张图片***/
-/*.main_box_enterprise{
-    text-align: center;
-    
-}*/
-/***每一张图片***/
-/*.enterprise {
-    display: inline-block;
-    margin-bottom: 20px;
-    background-color: #fff;
-}
-.enterprise:hover {
-	box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
-}
-.enterprise-img {
-	margin: 1rem;
-}
-*/
