@@ -1,11 +1,33 @@
 /************战略合作企业一栏************/
+.main-box4 {
+	width: 100%;
+}
+
+.img-box {
+	width: 100%;
+}
+
+.img-box img {
+	float: left;
+	width: 100%;
+	padding: 1rem 1px;
+}
+
+
+/*250%以上，页面较小，显示成一排一张图片*/
+@media screen and (max-width: 540px) {
+    .yipai {
+    	width: 100%;
+    }
+}
+
 /***包含五张图片***/
-.main_box_enterprise{
+/*.main_box_enterprise{
     text-align: center;
     
-}
+}*/
 /***每一张图片***/
-.enterprise {
+/*.enterprise {
     display: inline-block;
     margin-bottom: 20px;
     background-color: #fff;
@@ -16,3 +38,4 @@
 .enterprise-img {
 	margin: 1rem;
 }
+*/

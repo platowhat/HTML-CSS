@@ -11,7 +11,7 @@
 }
 /***导航菜单***/
 /*页面较小时，通过按钮控制下拉菜单*/
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 899px) {
 	.menu_box2 {
 		display: none;
 	}
@@ -87,7 +87,7 @@
 	}
 }
 
-@media screen and (min-width: 1079px) {
+@media screen and (min-width: 899px) {
 	.menu_box1, .drop_down_menu {
 		display: none;
 	}

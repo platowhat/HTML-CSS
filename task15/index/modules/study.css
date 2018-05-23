@@ -3,14 +3,13 @@
 .steps {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px 0;
+    padding: 3rem 1% 1rem 1%;
 }
 /**左盒子，不包括向右图标***/
 .circle-p {
-	display: flex;
-	align-items: center;
-	width: 90%;
+    display: flex;
+    align-items: center;
+    width: 90%;
 }
 /***圆，编号***/
 .circle {
@@ -25,22 +24,37 @@
 }
 /***文字***/
 .detail-t {
-	width: 80%;
+    width: 80%;
     padding: 0 15px;
     font-size: 1rem;
     color: #a1a1a1;
 }
 /***右图标***/
 .icon-arrow {
-	width: 10%;
-	height: 4rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .icon-arrow img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 /***空白***/
 .blank {
-	width: 10%;
+    width: 10%;
 }
+
+
+/*150%一下，页面较大时直接一排*/
+@media screen and (min-width: 899px) {
+    .steps {
+        float: left;
+        width: 23%;
+    }
+
+    .yincang {
+        display: none;
+    }
+}
+
+

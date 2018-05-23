@@ -1,28 +1,26 @@
 /************优秀学员展示一栏************/
-/***背景、边框阴影***/
-.content {
+.main3-box {
+	width: 100%;
+	margin-top: 1rem;
+	text-align: center;
 	background-color: #fff;
-	box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
 }
-/***头像***/
-.content img {
-	width: 30%;
-	height: 30%;
-	margin: 20px 35%;
+
+/*150%一下，页面较大时直接一排*/
+@media screen and (min-width: 899px) {
+    .main3-box {
+    	float: left;
+    	width: 23%;
+    	margin: 0 1%;
+    }
 }
-/***技术顾问***/
-.content span {
-	display: inline-block;
-	margin: 5%;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-/***文字描述***/
-.content p {
-	padding: 10%;
-	color: #999;
-}
+
 /***下方小圆点***/
+.waiting {
+	width: 100%;
+	text-align: center;
+}
+
 .wait {
 	display: inline-block;
 	width: 10px;
@@ -32,6 +30,6 @@
 	background-color: #999;
 }
 
-.waiting {
+.waited {
 	background-color: #29b078;
 }
