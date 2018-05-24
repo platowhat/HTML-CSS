@@ -1,4 +1,10 @@
 /*********导航**********/
+.daohang_text {
+	padding: 2rem 0;
+	margin: 0 5%;
+	border-bottom: 1px solid #999; 
+}
+
 .index_text {
 	font-size: 1rem;
 	color: black;
@@ -15,8 +21,4 @@
 }
 .career_text:hover {
 	text-decoration: none;
-}
-
-.daohang_text {
-	margin: 2rem 0;
 }

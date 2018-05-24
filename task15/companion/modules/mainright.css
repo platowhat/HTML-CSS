@@ -1,4 +1,6 @@
 .main_right {
+	float: left;
+	overflow: hidden;
 	margin-top: 10px;
 	background-color: #fff;
 }
@@ -16,6 +18,20 @@
 }
 
 .main_right_text {
-	padding: 0 20px;
+	padding: 0 4rem;
 	color: #999;
+}
+
+@media screen and (max-width: 899px) {
+	.main_right {
+		width: 90%;
+		margin: 1rem 5%;
+	}	
+}
+
+@media screen and (min-width: 899px) {
+	.main_right {
+		width: 65%;
+		margin-right: 5%;
+	}	
 }

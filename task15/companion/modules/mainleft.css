@@ -1,5 +1,6 @@
 /*********合作企业**********/
 .main_left {
+	float: left;
 	margin-top: 10px;
 	border: 1px solid #e1e1e1;
 	background-color: #fff;
@@ -19,6 +20,7 @@
 
 .main_left_box a {
 	color: #29b078;
+	text-decoration: none;
 }
 
 .circle {
@@ -38,4 +40,19 @@
 
 .main_left_box:hover .circle{
     background-color: #f9a372;
+}
+
+
+@media screen and (max-width: 899px) {
+	.main_left {
+		width: 90%;
+		margin: 1rem 5%;
+	}	
+}
+
+@media screen and (min-width: 899px) {
+	.main_left {
+		width: 23%;
+		margin: 0 2% 0 5%;
+	}	
 }
