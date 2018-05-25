@@ -2,7 +2,7 @@
 .main_box_text {
 	display: inline-block;
 	width: 100%;
-	margin: 2rem 0;
+	padding: 2rem 0;
 	font-weight: bold;
 }
 
@@ -50,14 +50,14 @@
 
 .post_name {
 	padding: 1rem;
-	font-size: 2rem;	
+	font-size: 1.5rem;	
 	font-weight: bold;
 }
 
 .post_explain {
 	width: 60%;
 	padding: 1rem;
-	font-size: 1.5rem;	
+	font-size: 1rem;	
 
 }
 /*********main_box2**********/
@@ -163,4 +163,19 @@
 .main_box6 {
 	width: 100%;
 	padding: 1rem;
+}
+
+@media screen and (max-width: 899px) {
+	.main_boxs {
+		width: 100%;
+		margin: 2rem 0;
+	}
+}
+
+@media screen and (min-width: 899px) {
+	.main_boxs {
+		float: left;
+		width: 32%;
+		margin: 2rem 0 2rem 1%;
+	}
 }

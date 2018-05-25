@@ -12,14 +12,14 @@
 
 
 .hover_title {
-    padding: 6rem;
-    font-size: 2rem;
+    padding-top: 6rem;
+    font-size: 2em;
     text-align: center;
 }
 
 .hover_text {
-    padding: 3rem 15% 0 15%;
-    font-size: 1.5rem;
+    padding: 2rem 15% 0 15%;
+    font-size: 1em;
 }
 
 
