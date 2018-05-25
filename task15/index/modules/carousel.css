@@ -1,63 +1,87 @@
 /************轮播图*************/
-.item img{
-	width:100%;
-}
-#carousel-example-generic{
-	width:100%;
-	margin:0 auto;
+.rotation {
+    position: relative;/*下方需求*/
+    width: 100%;
+    height: 30vw;
 }
 
-.carousel-caption {
-	margin: 0 -5%;
+.rotation img {
+    width: 100%;
+    display: block;
+    position: absolute;/*覆盖显示*/
+    top: 0;
 }
-/***向左***/
+
+@keyframes img {
+    0% {right: -100%; }
+    16.666667% {right: -100%; }
+    33.333334% {right: 0; }
+    50% {right: 0; }
+    66.666668% {right: 100%; }
+    100% {right: 100%; } 
+}
+
+@keyframes img-point {
+    0% {background-color: #FFF; }
+    33.333334% {background-color: #FFF; }
+    33.333335% {background-color: inherit; }
+    100% {background-color: inherit; } 
+}
+.img-init {
+    position: inherit;
+    z-index: 11;
+    animation: img 6s both infinite -2s; 
+}
+.img-2 {
+    z-index: 10;
+    animation: img 6s infinite; 
+}
+.img-3 {
+    z-index: 5;
+    animation: img 6s infinite 2s; 
+}
+.point-position {
+    position: absolute;
+    z-index: 20;
+    bottom: 10%;
+    right: 50%;
+    transform: translate(50%); 
+}
+.point {
+    width: 1vw;
+    height: 1vw;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+}
+.p1 {
+    animation: img-point 6s infinite -1s; 
+}
+.p2 {
+    animation: img-point 6s infinite 1s; 
+}
+.p3 {
+    animation: img-point 6s infinite 3s; 
+}
+
 .toleft {
-	position: absolute;
-	top: 30%;
-	left: 70%;
-	display: inline-block;
-	width: 20%;
-	height: 30%;
-	background: url(../../../images/task15/index/toleft.png) no-repeat 50% 50%/6vw 7vw;
+    position: absolute;
+    left: 2rem;
+    bottom: 40%;
+    z-index: 20;
+    display: inline-block;
+    width: 6vw;
+    height: 7vw;
+    background: url(../../../images/task15/index/toleft.png) no-repeat 50% 50%/6vw 7vw;
 }
-/***向右***/
 .toright {
-	position: absolute;
-	top: 30%;
-	right: 70%;
-	display: inline-block;
-	width: 20%;
-	height: 30%;
-	background: url(../../../images/task15/index/toright.png) no-repeat 50% 50%/6vw 7vw;
-}
-/***向左、向右定位***/
-.carousel-caption {
-	position: relative;
-	top: 25%;
-	overflow: hidden;
-	width: 70%;
-}
-/*********轮播图文字**********/
-.text1 {
-	display: inline-block;
-	float: right;
-	width: auto;
-	margin: 0;
-	font-size: 2vw;
-	font-weight: bold;
-	white-space: nowrap;
-}
-
-.text2 {
-	display: inline-block;
-	float: left;
-	width: 80%;
-	margin-left: 5%; 
-	font-size: 2.5vw;
-	font-weight: bold;
-	white-space: nowrap;
-}
-.text2 span {
-	font-size: 4.5vw;
-	font-weight: bold;
+    position: absolute;
+    right: 2rem;
+    bottom: 40%;
+    z-index: 20;
+    display: inline-block;
+    width: 6vw;
+    height: 7vw;
+    background: url(../../../images/task15/index/toright.png) no-repeat 50% 50%/6vw 7vw;
 }
