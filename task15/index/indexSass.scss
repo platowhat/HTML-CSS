@@ -1,0 +1,52 @@
+@import "../contactSass.css";
+@import "../navSass.css";
+@import "./modules/carouselSass.css";
+@import "./modules/introduceSass.css";
+@import "./modules/studySass.css";
+@import "./modules/displaySass.css";
+@import "./modules/enterpriseSass.css";
+@import "./modules/linkSass.css";
+@import "../footerSass.css";
+
+
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+
+
+/********************************main********************************/
+main {
+	overflow: hidden;
+	margin: 5rem 5%;
+}
+/*多出用到*/
+.bold_title {
+	margin-top: 10px; 
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.title_box {
+	margin: 30px 0;
+}
+
+
+
+
+
+

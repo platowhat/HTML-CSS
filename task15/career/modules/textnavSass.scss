@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*********导航**********/
+.daohang_text {
+	padding: 2rem 0;
+	margin: 0 5%;
+	border-bottom: 1px solid #999; 
+}
+
+.index_text {
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+.index_text {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+.career_text {
+	font-size: 1rem;
+	color: #29b078;
+	text-decoration: none;
+}
+.career_text {
+	&:hover {
+		text-decoration: none;
+	}
+}
+

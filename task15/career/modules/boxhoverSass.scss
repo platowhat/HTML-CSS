@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*********鼠标移上后**********/
+.hover_style{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(61,61,61,.7);
+}
+
+
+.hover_title {
+    padding-top: 6rem;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hover_text {
+    padding: 2rem 15% 0 15%;
+    font-size: 1em;
+}
+
+
+.main_boxs {
+	&:hover .hover_style{
+	    opacity: 1;
+	}
+}

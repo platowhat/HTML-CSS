@@ -1,0 +1,29 @@
+@charset "utf-8";
+/************战略合作企业一栏************/
+.main-box4 {
+	width: 100%;
+}
+
+.img-box {
+	width: 100vw;
+}
+
+.img-box {
+	img {
+		float: left;
+		width: 17vw;
+		padding: 1rem 1px;
+	}
+}
+
+
+
+/*250%以上，页面较小，显示成一排一张图片*/
+@media screen and (max-width: 540px) {
+    .yipai {
+    	width: 100%;
+    }
+    .img-box img {
+		width: 90%;
+	}
+}

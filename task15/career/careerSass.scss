@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@import "../contactSass.css";
+@import "../navSass.css";
+@import "./modules/textnavSass.css";
+@import "./modules/directionSass.css";
+@import "./modules/mainboxSass.css";
+@import "./modules/boxhoverSass.css";
+@import "../footerSass.css";
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+/********************************header********************************/
+header {
+	width: 100%;
+	background-color: #fff;
+}
+
+
+/********************************main********************************/
+main {
+	width: 100%;
+	background-color: #fafafa;
+}
+
+
+
+
+
+

@@ -1,2 +1,2 @@
 @import url(../contactSass.css);@import url(../navSass.css);@import url(./modules/pictureSass.css);@import url(./modules/textnavSass.css);@import url(./modules/mainleftSass.css);@import url(./modules/mainrightSass.css);@import url(../footerSass.css);html{font-size:62.5%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}*{margin:0px;padding:0px;font-family:'Lato', sans-serif;box-sizing:border-box}header{width:100%;background-color:#fff}main{width:100%;background-color:#fafafa}
-/*# sourceMappingURL=companion.css.map */
+/*# sourceMappingURL=companionSass.css.map */

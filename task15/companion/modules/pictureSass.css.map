@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,aAAc,CACb,OAAO,CAAE,YAAY,CACrB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,8EAA8E",
+"sources": ["pictureSass.scss"],
+"names": [],
+"file": "pictureSass.css"
+}

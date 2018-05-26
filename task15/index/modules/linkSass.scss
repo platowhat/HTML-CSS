@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/************友情链接一栏************/
+.link-box {
+	display: flex;
+	justify-content: space-between;
+	float: left;
+	width: 45%;
+	margin: .5rem 0;
+}
+.link-box {
+	a {
+		width: 20%;
+		color: #999;
+		text-decoration: none;
+	}
+} 
+
+
+
+/*175%（771px）以上，一排一排*/
+@media screen and (max-width: 771px) {
+    .link-box {
+    	width: 100%;
+    	margin: .5rem 5%;
+    }
+}

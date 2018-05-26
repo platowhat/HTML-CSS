@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/********************************footer********************************/
+footer {
+    width: 100%;
+    background-color: #29b078;
+}
+/***每个盒子***/
+.footer-details {
+    padding: 30px;
+    color: #fff;
+}
+/***标题***/
+.footer-title {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+/***超链接***/
+footer {
+	a {
+	    margin: 10px 10px 10px 0;
+	    font-size: 1.5rem;
+	    color: #fff;
+	    text-decoration: none;
+	}	
+}
+
+footer a {
+	&:hover {
+	    border-bottom: 1px solid #fff;
+	    color: #fff;
+	    text-decoration: none;
+	}
+}
+
+
+.our-webs {
+    margin-top: 10px;
+}
+/***最下方***/
+.copyright {
+    border-top: 1px solid #32c086;
+    width: 100%;
+    background-color: #29b078;
+}
+.copyright-details {
+    padding: 5px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+/*150%（899px）以上，三个盒子在一排*/
+@media screen and (min-width: 899px) {
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+
+    .footer-details {
+        width: 33%;
+        float: left;
+        padding: 0;
+        margin: 2rem 0;
+    }
+}
+
+/*150%（899px）以下，三个盒子各一排*/
+@media screen and (max-width: 899px) {
+    .footer-details {
+        text-align: center;
+    }
+}

@@ -1,0 +1,2 @@
+.steps{display:flex;align-items:center;padding:3rem 1% 1rem 1%}.circle-p{display:flex;align-items:center;width:90%}.circle{width:4rem;height:4rem;border-radius:50%;color:#29b078;line-height:4rem;text-align:center;background-color:#fff;box-shadow:0 1px 3px 0 rgba(8,1,3,0.15)}.detail-t{width:80%;padding:0 15px;font-size:1rem;color:#a1a1a1}.icon-arrow{width:4rem;height:4rem}.icon-arrow img{width:100%;height:100%}.blank{width:10%}@media screen and (min-width: 899px){.steps{float:left;width:23%}.yincang{display:none}}
+/*# sourceMappingURL=studySass.css.map */

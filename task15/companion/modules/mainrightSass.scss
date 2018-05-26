@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.main_right {
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+.main_right_line {
+	border-top: 1px solid #f0f0f0;
+}
+
+.main_right_box {
+	padding: 20px 0;
+}
+
+.main_right_box {
+	img {
+		float: left;
+	}	
+}
+
+
+.main_right_text {
+	padding: 0 4rem;
+	color: #999;
+}
+
+@media screen and (max-width: 899px) {
+	.main_right {
+		width: 90%;
+		margin: 1rem 5%;
+	}	
+}
+
+@media screen and (min-width: 899px) {
+	.main_right {
+		width: 65%;
+		margin-right: 5%;
+	}	
+}

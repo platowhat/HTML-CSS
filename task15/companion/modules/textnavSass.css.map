@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,aAAc,CACb,MAAM,CAAE,OAAO,CAGhB,WAAY,CACX,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,IAAI,CAEtB,iBAAkB,CACjB,eAAe,CAAE,IAAI,CAGtB,eAAgB,CACf,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,OAAO,CACd,eAAe,CAAE,IAAI,CAEtB,qBAAsB,CACrB,eAAe,CAAE,IAAI",
+"sources": ["textnavSass.scss"],
+"names": [],
+"file": "textnavSass.css"
+}
