@@ -387,6 +387,7 @@
 
 /************************************** 以 *rem* 为单位 */
 /********************* padding 四周*/
+.p5re {padding: .5rem;}
 .p1rem {padding: 1rem;}
 .p2rem {padding: 2rem;}
 .p3rem {padding: 3rem;}
@@ -522,11 +523,11 @@
 .fs24px {font-size: 24px;}
 
 /************************* 以 *rem* 为单位 */
-.fsd5rem {font-size: .5rem;}
+.fs5re {font-size: .5rem;}
 .fs1rem {font-size: 1rem;}
-.fs1d5rem {font-size: 1.5rem;}
+.fs15re {font-size: 1.5rem;}
 .fs2rem {font-size: 2rem;}
-.fs2d5rem {font-size: 2.5rem;}
+.fs25re {font-size: 2.5rem;}
 .fs3rem {font-size: 3rem;}
 .fs4rem {font-size: 4rem;}
 .fs5rem {font-size: 5rem;}
