@@ -32,7 +32,13 @@ header {
 /********************************main********************************/
 main {
 	overflow: hidden;
-	margin: 3rem 5%;
+	margin: 0 13vw;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 6rem;
 }
 /*多出用到*/
 .bold_title {

@@ -1,10 +1,14 @@
 /*********登录、注册**********/
-/*包含三个盒子*/
+.aa {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+/*包含登录、竖线、注册三个盒子*/
 .header_top_box {
 	display: flex;
 	align-items: center;
-	margin: 8px 5%;
-	float: right;
+	margin: 0 5%;
 }
 
 .login {

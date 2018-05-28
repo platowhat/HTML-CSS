@@ -3,7 +3,9 @@
 .steps {
     display: flex;
     align-items: center;
-    padding: 3rem 1% 1rem 1%;
+    height: 6rem;
+    float: left;
+    margin-top: 4rem;
 }
 /**左盒子，不包括向右图标***/
 .circle-p {
@@ -13,11 +15,11 @@
 }
 /***圆，编号***/
 .circle {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     color: #29b078;
-    line-height: 4rem;
+    line-height: 3.5rem;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(8, 1, 3, .15);
@@ -25,19 +27,21 @@
 /***文字***/
 .detail-t {
     width: 80%;
-    padding: 0 15px;
-    font-size: 1rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
     color: #a1a1a1;
 }
 /***右图标***/
 .icon-arrow {
-    width: 4rem;
-    height: 4rem;
+    width: 1.6rem;
+    height: 1.8rem;
 }
 
 .icon-arrow img {
     width: 100%;
     height: 100%;
+    padding-right: .5rem;
 }
 /***空白***/
 .blank {
@@ -49,11 +53,11 @@
 @media screen and (min-width: 899px) {
     .steps {
         float: left;
-        width: 23%;
+        width: 25%;
     }
 
     .yincang {
-        display: none;
+        visibility: hidden;
     }
 }
 

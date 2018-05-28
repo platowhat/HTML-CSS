@@ -238,7 +238,9 @@
 /********************* margin-bottom*/
 .mb1rem {margin-bottom: 1rem;}
 .mb2rem {margin-bottom: 2rem;}
+.mb25re {margin-bottom: 2.5rem;}
 .mb3rem {margin-bottom: 3rem;}
+.mb35re {margin-bottom: 3.5rem;}
 .mb4rem {margin-bottom: 4rem;}
 .mb5rem {margin-bottom: 5rem;}
 .mb6rem {margin-bottom: 6rem;}
@@ -262,6 +264,10 @@
 .ml10rem {margin-left: 10rem;}
 .ml15rem {margin-left: 15rem;}
 .ml20rem {margin-left: 20rem;}
+
+/********************* margin一些组合*/
+.mtb1rem {margin-top: 1rem; margin-bottom: 1rem;}
+
 
 /************************************* 以 *%* 为单位 */
 /********************* margin 四周*/
@@ -454,6 +460,12 @@
 .pl10rem {padding-left: 10rem;}
 .pl15rem {padding-left: 15rem;}
 .pl20rem {padding-left: 20rem;}
+
+
+/********************* padding一些组合*/
+.ptb1rem {padding-top: 1rem; padding-bottom: 1rem;}
+
+
 
 /************************************** 以 *%* 为单位 */
 /********************* padding 四周*/
