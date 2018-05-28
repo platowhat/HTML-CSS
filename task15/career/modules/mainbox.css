@@ -2,7 +2,9 @@
 .main_box_text {
 	display: inline-block;
 	width: 100%;
-	padding: 2rem 0;
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #D0D6D9;
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 
@@ -25,6 +27,7 @@
 }
 
 .gray_text {
+	font-size: 1.2rem;
 	font-style: normal;
 	color: #999;
 }
@@ -50,14 +53,14 @@
 
 .post_name {
 	padding: 1rem;
-	font-size: 1.5rem;	
+	font-size: 1.6rem;	
 	font-weight: bold;
 }
 
 .post_explain {
 	width: 60%;
 	padding: 1rem;
-	font-size: 1rem;	
+	font-size: 1.4rem;	
 
 }
 /*********main_box2**********/
@@ -155,7 +158,7 @@
 	width: 100%;
 	padding: 1rem;
 	border-bottom: 1px solid #f0f0f0;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 }
 

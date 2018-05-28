@@ -2,10 +2,9 @@
 /***技能树图片***/
 .jinengshu {
 	display: inline-block;
-	width: 6rem;
+	width: 6.6rem;
 	height: 3rem;
-	margin-left: 3%;
-	margin-top: 1rem;
+	margin: 3.5rem 5%;
 	background: url(../images/task15/jinengshu.png) no-repeat 50% 50%/100% 100%;
 
 }
